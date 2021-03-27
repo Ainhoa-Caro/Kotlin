@@ -3,59 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#7C7C7C">
+    android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/Correo_edittext"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:background="@android:color/white"
+        android:background="@drawable/textviewlogin"
         android:ems="10"
         android:hint="@string/Correo_Teléfono"
-        android:paddingLeft="16dp"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/Password_edittext"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:hint="@string/Contraseña"
-        android:inputType="textPassword"
         android:paddingLeft="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/Correo_edittext"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Correo_edittext"
-        app:layout_constraintTop_toBottomOf="@+id/Correo_edittext" />
-
-    <Button
-        android:id="@+id/Login_boton"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/Login"
-        app:layout_constraintEnd_toEndOf="@+id/Password_edittext"
-        app:layout_constraintStart_toStartOf="@+id/Password_edittext"
-        app:layout_constraintTop_toBottomOf="@+id/Password_edittext" />
-
-    <Button
-        android:id="@+id/Registrarse_boton"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:text="@string/Registrarse"
-        app:layout_constraintEnd_toEndOf="@+id/Password_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/Password_edittext"
-        app:layout_constraintTop_toBottomOf="@+id/Login_boton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/RecuperarContraseña_textView"
@@ -64,11 +29,65 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="16sp"
         android:text="@string/RecuperarContraseña"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/Registrarse_boton"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/Registrarse_boton"
         app:layout_constraintTop_toBottomOf="@+id/Registrarse_boton" />
+
+    <Button
+        android:id="@+id/Registrarse_boton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/botoneslogin"
+        android:text="@string/Registrarse"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Password_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Login_boton" />
+
+    <Button
+        android:id="@+id/Login_boton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/botoneslogin"
+        android:text="@string/Login"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Password_edittext"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Password_edittext" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/Password_edittext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textviewlogin"
+        android:ems="10"
+        android:hint="@string/Contraseña"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/Correo_edittext"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Correo_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Correo_edittext" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

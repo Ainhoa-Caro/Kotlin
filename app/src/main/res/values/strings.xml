@@ -17,5 +17,7 @@
     <string name="Contraseña">Contraseña</string>
     <string name="Login">Login</string>
     <string name="Registrarse">Registrarse</string>
-    ç<string name="RecuperarContraseña">Recuperar Contraseña</string>
+    <string name="RecuperarContraseña">Recuperar Contraseña</string>
+    <string name="UserName">Nombre Usuario</string>
+    <string name="RepiteContraseña">Repite Contraseña</string>
 </resources>

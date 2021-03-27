@@ -1,5 +1,6 @@
 package com.example.chitchat
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,8 @@ class LoginActivity : AppCompatActivity() {
         }
         Registrarse_boton.setOnClickListener{
             Log.d("MainActivity","Recuperar")
+            val intent = Intent (this,RegistrarseActivity::class.java)
+            startActivity(intent)
 
         }
         RecuperarContraseña_textView.setOnClickListener {
