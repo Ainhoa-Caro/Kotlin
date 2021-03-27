@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Registrarse_boton" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/Correo_edittext"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
@@ -30,13 +30,13 @@
         android:hint="@string/Correo_Teléfono"
         android:inputType="textPersonName"
         android:paddingLeft="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/Nombre_edittext"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/Nombre_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre_edittext" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Passwordone_edittext"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
@@ -46,13 +46,13 @@
         android:hint="@string/Contraseña"
         android:inputType="textPassword"
         android:paddingLeft="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/Correo_edittext"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toStartOf="@+id/Correo_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Correo_edittext" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Nombre_edittext"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Seleccionfoto_imagenView" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/Passwordotwo_edittext"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
@@ -80,10 +80,10 @@
         android:hint="@string/RepiteContraseña"
         android:inputType="textPassword"
         android:paddingLeft="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/Passwordone_edittext"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="@+id/Passwordone_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Passwordone_edittext" />
 
     <Button
         android:id="@+id/Registrarse_boton"
@@ -93,10 +93,10 @@
         android:background="@drawable/botoneslogin"
         android:text="@string/Registrarse"
         android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintEnd_toEndOf="@+id/Passwordotwo_edittext"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintStart_toStartOf="@+id/Passwordotwo_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Passwordotwo_edittext" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/Seleccionfoto_imagenView"

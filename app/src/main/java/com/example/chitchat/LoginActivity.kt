@@ -12,9 +12,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-
-
-
         Login_boton.setOnClickListener {
 
             val email = Correo_edittext.text.toString()
