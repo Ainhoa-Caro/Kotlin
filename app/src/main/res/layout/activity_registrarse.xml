@@ -27,7 +27,7 @@
 
         android:background="@drawable/textviewlogin"
         android:ems="10"
-        android:hint="@string/Correo_Teléfono"
+        android:hint="@string/Correo"
         android:inputType="textPersonName"
         android:paddingLeft="16dp"
         app:layout_constraintEnd_toEndOf="@+id/Nombre_edittext"
