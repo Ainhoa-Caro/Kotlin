@@ -17,6 +17,9 @@ class LoginActivity : AppCompatActivity() {
     private var auth: FirebaseAuth = Firebase.auth
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Thread.sleep(1000)
+        setTheme(R.style.AppTheme)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         Login_boton.setOnClickListener {
