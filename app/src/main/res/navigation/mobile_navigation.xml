@@ -22,4 +22,12 @@
         android:name="com.example.chitchat.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/ajustesFragment"
+        android:name="com.example.chitchat.ui.ajustes.AjustesFragment"
+        android:label="AjustesFragment" />
+    <fragment
+        android:id="@+id/settingsChatFragment"
+        android:name="com.example.chitchat.SettingsChatFragment"
+        android:label="SettingsChatFragment" />
 </navigation>
