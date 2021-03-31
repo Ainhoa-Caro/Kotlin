@@ -33,6 +33,7 @@ class RegistroFragment : Fragment() {
     //Autentificacion y registro en la base de datos
     private var auth: FirebaseAuth = Firebase.auth
     private var database: DatabaseReference = Firebase.database.reference
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.fragment_registro, container, false)
         nombreusuario = root.findViewById<EditText>(R.id.Nombre_edittext)
@@ -100,8 +101,7 @@ class RegistroFragment : Fragment() {
                         var id: String = auth.currentUser.getUid()
                         database.child("users").child(id).setValue(usuarios).addOnCompleteListener(it) { task2 ->
                             if (task2.isSuccessful) {
-
-                                requireActivity().finish()
+                                NavHostFragment.findNavController(this).popBackStack()
                             }
                         }
                     }else{
