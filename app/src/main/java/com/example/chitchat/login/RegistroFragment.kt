@@ -100,8 +100,7 @@ class RegistroFragment : Fragment() {
                         var id: String = auth.currentUser.getUid()
                         database.child("users").child(id).setValue(usuarios).addOnCompleteListener(it) { task2 ->
                             if (task2.isSuccessful) {
-
-                                requireActivity().finish()
+                                NavHostFragment.findNavController(this).popBackStack()
                             }
                         }
                     }else{
