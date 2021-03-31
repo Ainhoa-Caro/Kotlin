@@ -6,7 +6,16 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c684b8cf-74d3-4974-ad7a-761bcaabe5b9" name="Default Changelist" comment="" />
+    <list default="true" id="c684b8cf-74d3-4974-ad7a-761bcaabe5b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chitchat/ui/settings/SettingsViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/chitchat/ui/settings/SettingsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chitchat/ui/settings/SettingsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -51,6 +61,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -144,11 +155,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="273" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040/-1366.483.1366.728@0.0.1920.1040" timestamp="1616941337262" />
-    <state x="-840" y="674" key="FileChooserDialogImpl" timestamp="1616948712108">
-      <screen x="-1366" y="483" width="1366" height="728" />
+    <state x="540" y="273" key="AndroidCreateResourceFileDialog" timestamp="1617202140440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="273" key="AndroidCreateResourceFileDialog/0.0.1920.1040/-1366.523.1366.728@0.0.1920.1040" timestamp="1617202140440" />
+    <state x="739" y="273" key="FileChooserDialogImpl" timestamp="1617202777411">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-840" y="674" key="FileChooserDialogImpl/0.0.1920.1040/-1366.483.1366.728@-1366.483.1366.728" timestamp="1616948712108" />
     <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1040/-1366.483.1366.728@0.0.1920.1040" timestamp="1616930533647" />
+    <state x="739" y="273" key="FileChooserDialogImpl/0.0.1920.1040/-1366.523.1366.728@0.0.1920.1040" timestamp="1617202777411" />
     <state x="540" y="261" key="IDE.errors.dialog" timestamp="1616938625327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

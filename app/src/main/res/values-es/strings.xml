@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChitChat</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="menu_home">Casa</string>
+    <string name="nav_header_title">usuario</string>
+    <string name="nav_header_subtitle">correo</string>
+</resources>
