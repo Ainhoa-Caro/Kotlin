@@ -3,23 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/loginFragment">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.chitchat.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/loginFragment"
+        android:name="com.example.chitchat.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.chitchat.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/mainFragment"
+        android:name="com.example.chitchat.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.chitchat.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/registroFragment"
+        android:name="com.example.chitchat.login.RegistroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" />
 </navigation>
