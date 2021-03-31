@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.fragment.NavHostFragment
@@ -19,7 +20,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_registrarse.*
+
 
 class RegistroFragment : Fragment() {
     //Declaracion de variables
@@ -28,7 +29,7 @@ class RegistroFragment : Fragment() {
     private lateinit var email: EditText
     private lateinit var passwordone: EditText
     private lateinit var passwordtwo: EditText
-
+    private lateinit var imgfoto: ImageView
     //Autentificacion y registro en la base de datos
     private var auth: FirebaseAuth = Firebase.auth
     private var database: DatabaseReference = Firebase.database.reference
@@ -38,10 +39,9 @@ class RegistroFragment : Fragment() {
         email = root.findViewById<EditText>(R.id.Correo_edittext)
         passwordone = root.findViewById<EditText>(R.id.Passwordone_edittext)
         passwordtwo = root.findViewById<EditText>(R.id.Passwordotwo_edittext)
-
         val btvolver=root.findViewById<View>(R.id.Volver_boton)
         val btregistrarse=root.findViewById<View>(R.id.Registrarse_boton_Vregistro)
-        val imgfoto=root.findViewById<View>(R.id.Seleccionfoto_imagenView)
+        imgfoto=root.findViewById<ImageView>(R.id.Seleccionfoto_imagenView)
 
         //Boton para volver a la pantalla de login
         btvolver.setOnClickListener {
@@ -123,7 +123,7 @@ class RegistroFragment : Fragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         imageUri = data!!.data!!
-        Seleccionfoto_imagenView.setImageURI(imageUri)
+        imgfoto.setImageURI(imageUri)
     }
 
 
