@@ -2,8 +2,10 @@ package com.example.chitchat.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.chitchat.MainActivity
 import com.example.chitchat.R
@@ -12,16 +14,16 @@ import com.facebook.FacebookCallback
 import com.facebook.FacebookException
 import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.auth.api.signin.GoogleSignInResult
+import com.google.android.gms.auth.api.signin.*
+import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
-
+    private val GOOGLE_SIGN_IN = 100
     private var auth: FirebaseAuth = Firebase.auth
     private val callbackManager = CallbackManager.Factory.create()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,9 +35,11 @@ class LoginActivity : AppCompatActivity() {
         boton_google.setOnClickListener {
             val configuraciongoogle = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
+                .requestEmail().requestId()
                 .build()
-
+            val cliente = GoogleSignIn.getClient(this,configuraciongoogle)
+            cliente.signOut()
+            startActivityForResult(cliente.signInIntent,GOOGLE_SIGN_IN)
 
         }
 
@@ -80,11 +84,7 @@ class LoginActivity : AppCompatActivity() {
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
                         } else {
-                            Toast.makeText(
-                                this,
-                                "Usuario o Password incorrecto",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                           Alerta()
                         }
                     }
             }
@@ -96,6 +96,37 @@ class LoginActivity : AppCompatActivity() {
         RecuperarContraseña_textView.setOnClickListener {
             Log.d("MainActivity", "Recuperar")
 
+        }
+    }
+    private fun Alerta(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Se ha producido un error autentificando al usuario")
+        builder.setPositiveButton("Aceptar",null)
+        val dialog = builder.create()
+        dialog.show()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode == GOOGLE_SIGN_IN){
+            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            try{
+                val account = task.getResult(ApiException::class.java)
+                if(account != null) {
+                    val credencial = GoogleAuthProvider.getCredential(account.idToken, null)
+                    auth.signInWithCredential(credencial).addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                        }else{
+                            Alerta()
+                        }
+                    }
+                }
+            }catch(e: ApiException){
+                Alerta()
+            }
         }
     }
 

@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.chitchat.MainActivity
 import com.example.chitchat.R
@@ -102,9 +103,17 @@ class RegistrarseActivity : AppCompatActivity() {
                             }
                         }
                 }else{
-                    Toast.makeText(this, "No se pudieron crear los datos correctamente", Toast.LENGTH_SHORT).show()
+                   Alerta()
                 }
             }
+    }
+    private fun Alerta(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Se ha producido un error autentificando al usuario")
+        builder.setPositiveButton("Aceptar",null)
+        val dialog = builder.create()
+        dialog.show()
     }
 
     //Esta funcion, es llamada al pulsar en el boton Seleccionfoto_imagenView. Linea 41
