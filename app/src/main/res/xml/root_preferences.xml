@@ -1,0 +1,72 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <PreferenceCategory android:title="Perfil"
+        >
+
+        <EditTextPreference
+            android:defaultValue="Perfil"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="@string/UserName"
+            android:summary="@string/settings_Profile_Info"
+            android:icon="@mipmap/ic_launcher_round"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Ajustes cuenta">
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Account"
+            android:summary="Privacidad y seguridad"
+            android:icon="@drawable/ic_settings_account"/>
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Chats"
+            android:summary="Privacidad y seguridad"
+            android:icon="@drawable/ic_settings_chat"/>
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Notificaciones"
+            android:summary="Privacidad y seguridad"
+            android:icon="@drawable/ic_settings_notifications"/>
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Idioma"
+            android:summary="Privacidad y seguridad"
+            android:icon="@drawable/ic_settings_language"/>
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Ayuda"
+            android:summary="Privacidad y seguridad"
+            android:icon="@drawable/ic_settings_help"/>
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Invitar usuario"
+            android:summary="Privacidad y seguridad"
+            android:icon="@drawable/ic_settings_invite"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

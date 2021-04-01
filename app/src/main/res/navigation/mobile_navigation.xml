@@ -26,4 +26,8 @@
         android:name="com.example.chitchat.login.RegistroFragment"
         android:label="fragment_registro"
         tools:layout="@layout/fragment_registro" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.chitchat.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>
