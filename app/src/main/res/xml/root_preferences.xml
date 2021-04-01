@@ -31,7 +31,7 @@
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:title="Chats"
-            android:summary="Privacidad y seguridad"
+            android:summary="Tema, fondo de pantalla, historial de chat"
             android:icon="@drawable/ic_settings_chat"/>
         <EditTextPreference
             android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:title="Notificaciones"
-            android:summary="Privacidad y seguridad"
+            android:summary="Tono de mensajes y grupos"
             android:icon="@drawable/ic_settings_notifications"/>
         <EditTextPreference
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:title="Idioma"
-            android:summary="Privacidad y seguridad"
+            android:summary="Change language"
             android:icon="@drawable/ic_settings_language"/>
         <EditTextPreference
             android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:title="Ayuda"
-            android:summary="Privacidad y seguridad"
+            android:summary="Centro de ayuda, contactanos, politica de privacidad"
             android:icon="@drawable/ic_settings_help"/>
         <EditTextPreference
             android:layout_width="wrap_content"
@@ -63,7 +63,6 @@
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:title="Invitar usuario"
-            android:summary="Privacidad y seguridad"
             android:icon="@drawable/ic_settings_invite"/>
 
     </PreferenceCategory>

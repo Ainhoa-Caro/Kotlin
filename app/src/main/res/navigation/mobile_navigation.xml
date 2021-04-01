@@ -20,7 +20,11 @@
         android:id="@+id/mainFragment"
         android:name="com.example.chitchat.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registroFragment"
         android:name="com.example.chitchat.login.RegistroFragment"
