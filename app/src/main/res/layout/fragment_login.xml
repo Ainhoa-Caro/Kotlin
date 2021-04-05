@@ -98,6 +98,15 @@
         app:layout_constraintStart_toStartOf="@+id/Login_boton"
         app:layout_constraintTop_toBottomOf="@+id/RecuperarContraseña_textView" />
 
+    <Button
+        android:id="@+id/boton_facebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/Registrarse_boton"
+        app:layout_constraintStart_toStartOf="@+id/Login_boton"
+        app:layout_constraintTop_toBottomOf="@+id/boton_google" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

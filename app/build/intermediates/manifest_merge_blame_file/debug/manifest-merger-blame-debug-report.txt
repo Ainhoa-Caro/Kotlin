@@ -28,7 +28,7 @@
 16-->[com.google.android.play:core:1.7.2] C:\Users\Javie\.gradle\caches\transforms-2\files-2.1\f38ce2a031ca97edd9d423c9a28a6e61\jetified-core-1.7.2\AndroidManifest.xml:8:20-72
 17
 18    <application
-18-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:8:5-35:19
+18-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:8:5-37:19
 19        android:allowBackup="true"
 19-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:9:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -90,22 +90,22 @@
 50
 51        <!-- Add Other activities like this -->
 52        <activity
-52-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:27:9-34:20
+52-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:29:9-36:20
 53            android:name="com.example.chitchat.MainActivity"
-53-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:27:19-47
+53-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:29:19-47
 54            android:theme="@style/SplashTheme" >
-54-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:28:13-47
+54-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:30:13-47
 55
 56            <!-- Default Intent Filter -->
 57            <intent-filter>
-57-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:30:13-33:29
+57-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:32:13-35:29
 58                <action android:name="android.intent.action.MAIN" />
-58-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:31:17-69
-58-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:31:25-66
+58-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:33:17-69
+58-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:33:25-66
 59
 60                <category android:name="android.intent.category.LAUNCHER" />
-60-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:32:17-77
-60-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:32:27-74
+60-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:34:17-77
+60-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:34:27-74
 61            </intent-filter>
 62        </activity>
 63
@@ -354,8 +354,8 @@
 202            <intent-filter>
 202-->[androidx.test:core:1.3.0] C:\Users\Javie\.gradle\caches\transforms-2\files-2.1\77c74a1cf5fe14a02b96619da8b0b549\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
 203                <action android:name="android.intent.action.MAIN" />
-203-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:31:17-69
-203-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:31:25-66
+203-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:33:17-69
+203-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:33:25-66
 204            </intent-filter>
 205        </activity>
 206        <activity
@@ -367,8 +367,8 @@
 209            <intent-filter>
 209-->[androidx.test:core:1.3.0] C:\Users\Javie\.gradle\caches\transforms-2\files-2.1\77c74a1cf5fe14a02b96619da8b0b549\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
 210                <action android:name="android.intent.action.MAIN" />
-210-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:31:17-69
-210-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:31:25-66
+210-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:33:17-69
+210-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:33:25-66
 211            </intent-filter>
 212        </activity>
 213        <activity
@@ -380,8 +380,8 @@
 216            <intent-filter>
 216-->[androidx.test:core:1.3.0] C:\Users\Javie\.gradle\caches\transforms-2\files-2.1\77c74a1cf5fe14a02b96619da8b0b549\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
 217                <action android:name="android.intent.action.MAIN" />
-217-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:31:17-69
-217-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:31:25-66
+217-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:33:17-69
+217-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml:33:25-66
 218            </intent-filter>
 219        </activity> <!-- The activities will be merged into the manifest of the hosting app. -->
 220        <activity

@@ -23,6 +23,8 @@
         </intent-filter>
         </activity>
 
+
+
         <!--Add Other activities like this-->
         <activity android:name=".MainActivity"
             android:theme="@style/SplashTheme">
