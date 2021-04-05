@@ -13,8 +13,13 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="-106" />
                             <option name="y" value="211" />
+=======
+                            <option name="x" value="12" />
+                            <option name="y" value="54" />
+>>>>>>> develop
                           </Point>
                         </option>
                         <option name="myPositions">
