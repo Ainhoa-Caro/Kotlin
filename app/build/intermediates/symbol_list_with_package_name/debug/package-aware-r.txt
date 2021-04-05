@@ -1977,7 +1977,6 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id blocking
-id boton_fb
 id boton_google
 id bottom
 id bounce

@@ -84,15 +84,6 @@
         app:layout_constraintStart_toStartOf="@+id/Correo_edittext"
         app:layout_constraintTop_toBottomOf="@+id/Correo_edittext" />
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/boton_fb"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/Registrarse_boton"
-        app:layout_constraintStart_toStartOf="@+id/Login_boton"
-        app:layout_constraintTop_toBottomOf="@+id/RecuperarContraseña_textView" />
 
     <Button
         android:id="@+id/boton_google"
@@ -103,8 +94,10 @@
         android:textColor="@color/colorPrimaryDark"
         android:textColorHighlight="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="@+id/Registrarse_boton"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/Login_boton"
-        app:layout_constraintTop_toBottomOf="@+id/boton_fb" />
+        app:layout_constraintTop_toBottomOf="@+id/RecuperarContraseña_textView" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
