@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable-v24\\logogoogle.png"
     },
     {
+        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_facebook.png.flat",
+        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\facebook.png"
+    },
+    {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_insertarfoto.png.flat",
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\insertarfoto.png"
     },
@@ -24,12 +28,12 @@
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
-        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\layout\\fragment_registro.xml"
-    },
-    {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
+        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\layout\\fragment_registro.xml"
     },
     {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",

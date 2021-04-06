@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.fragment.NavHostFragment
@@ -27,30 +29,41 @@ import kotlinx.android.synthetic.main.fragment_login.*
 
 
 class LoginFragment : Fragment() {
+    private lateinit var btgoogle: Button
+    private lateinit var btfacebook: Button
+    private lateinit var btlogin: Button
+    private lateinit var btregistro: Button
+    private lateinit var tvrecuperar:TextView
+
     private val GOOGLE_SIGN_IN = 100
     private var auth: FirebaseAuth = Firebase.auth
     private val callbackManager = CallbackManager.Factory.create()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.fragment_login, container, false)
-        val btgoogle=root.findViewById<View>(R.id.boton_google)
-        val boton_facebook=root.findViewById<View>(R.id.boton_facebook)
-        val btlogin=root.findViewById<View>(R.id.Login_boton)
-        val btregistro=root.findViewById<View>(R.id.Registrarse_boton)
-        val tvrecuperar=root.findViewById<View>(R.id.RecuperarContraseña_textView)
+        btgoogle=root.findViewById<Button>(R.id.boton_google)
+        btfacebook=root.findViewById< Button>(R.id.boton_facebook)
+        btlogin=root.findViewById<Button>(R.id.Login_boton)
+        btregistro=root.findViewById<Button>(R.id.Registrarse_boton)
+        tvrecuperar=root.findViewById<TextView>(R.id.RecuperarContraseña_textView)
+        setup()
+        sesion()
+        return root
+    }//Fin del Oncreate
+
+    private fun setup() {
         // Boton que inicia sesion con Google
         btgoogle.setOnClickListener {
             val configuraciongoogle = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail().requestId()
-                .build()
+                    .requestIdToken(getString(R.string.default_web_client_id))
+                    .requestEmail().requestId()
+                    .build()
             val cliente = activity?.let { it1 -> GoogleSignIn.getClient(it1,configuraciongoogle) }
             cliente?.signOut()
             startActivityForResult(cliente?.signInIntent,GOOGLE_SIGN_IN)
 
         }
-
         //Boton que inicia sesion con Facebook
-        boton_facebook.setOnClickListener {
+        btfacebook.setOnClickListener {
             LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
             LoginManager.getInstance().registerCallback(callbackManager,object : FacebookCallback<LoginResult>{
                 override fun onSuccess(result: LoginResult?) {
@@ -59,58 +72,65 @@ class LoginFragment : Fragment() {
                         val credencial = FacebookAuthProvider.getCredential(token.token)
 
                         FirebaseAuth.getInstance().signInWithCredential(credencial)
-                            .addOnCompleteListener { task2 ->
-                                if (task2.isSuccessful) {
-                                    NavHostFragment.findNavController(this@LoginFragment).navigate(R.id.action_loginFragment_to_mainFragment)
+                                .addOnCompleteListener { task2 ->
+                                    if (task2.isSuccessful) {
+                                        NavHostFragment.findNavController(this@LoginFragment).navigate(R.id.action_loginFragment_to_mainFragment)
+                                    }
                                 }
-                            }
                     }
                 }
                 override fun onCancel() {
-
+                    Alerta()
                 }
 
                 override fun onError(error: FacebookException?) {
-                   Alerta()
+                    Alerta()
                 }
             })
         }
+        //Boton que incia  sesion con usuario y contraseña
         btlogin.setOnClickListener {
             if (Correo_edittext.text.toString().isEmpty() || Password_edittext.text.toString()
-                    .isEmpty()
+                            .isEmpty()
             ) {
                 Toast.makeText(context, "Debe rellenar los campos", Toast.LENGTH_SHORT).show()
             } else {
                 activity?.let { it1 ->
                     auth.signInWithEmailAndPassword(
-                        Correo_edittext.text.toString(),
-                        Password_edittext.text.toString()
+                            Correo_edittext.text.toString(),
+                            Password_edittext.text.toString()
                     )
-                        .addOnCompleteListener(it1) { task ->
-                            if (task.isSuccessful) {
-                              //Navegacion a la ventana de Main Activity
-                                  Log.d("MainActivity","error")
-                                NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_mainFragment)
+                            .addOnCompleteListener(it1) { task ->
+                                if (task.isSuccessful) {
+                                    //Navegacion a la ventana de Main Activity
+                                    Log.d("MainActivity","error")
+                                    NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_mainFragment)
 
-                            } else {
-                                Log.d("MainActivity","error")
-                                Alerta()
+                                } else {
+                                    Log.d("MainActivity","error")
+                                    Alerta()
+                                }
                             }
-                        }
                 }
             }
         }
+        //Boton que manda al fragment de registro
         btregistro.setOnClickListener {
             NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_registroFragment)
         }
+        //Boton que te mante un correo con tu contraseña
         tvrecuperar.setOnClickListener {
             Log.d("MainActivity", "Recuperar")
 
         }
-        return root
-    }//Fin del Oncreate
+    }
+
+    private fun sesion() {
+
+    }
 
 
+    //Se muestra cuando no se puede iniciar sesion
     private fun Alerta(){
         val builder = context?.let { AlertDialog.Builder(it) }
         builder?.setTitle("Error")
