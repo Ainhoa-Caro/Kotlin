@@ -70,7 +70,6 @@ class LoginFragment : Fragment() {
                     result?.let {
                         val token = it.accessToken
                         val credencial = FacebookAuthProvider.getCredential(token.token)
-
                         FirebaseAuth.getInstance().signInWithCredential(credencial)
                                 .addOnCompleteListener { task2 ->
                                     if (task2.isSuccessful) {

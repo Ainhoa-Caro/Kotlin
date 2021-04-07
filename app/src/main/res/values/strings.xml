@@ -16,6 +16,8 @@
     <string name="fb_login_protocol_scheme">fb122948953084635</string>
 
 
+    //Necesario para guardar sesiones
+    //<string name="prefs_file">com.exampl</string>
 
     <string name="Correo">Correo</string>
     <string name="Contraseña">Contraseña</string>

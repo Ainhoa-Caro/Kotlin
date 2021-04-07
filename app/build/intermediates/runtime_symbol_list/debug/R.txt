@@ -2718,11 +2718,12 @@ int string path_password_eye 0x7f1000a9
 int string path_password_eye_mask_strike_through 0x7f1000aa
 int string path_password_eye_mask_visible 0x7f1000ab
 int string path_password_strike_through 0x7f1000ac
-int string progress 0x7f1000ad
-int string project_id 0x7f1000ae
-int string retry 0x7f1000af
-int string search_menu_title 0x7f1000b0
-int string status_bar_notification_info_overflow 0x7f1000b1
+int string prefs_file 0x7f1000ad
+int string progress 0x7f1000ae
+int string project_id 0x7f1000af
+int string retry 0x7f1000b0
+int string search_menu_title 0x7f1000b1
+int string status_bar_notification_info_overflow 0x7f1000b2
 int style AlertDialog_AppCompat 0x7f110000
 int style AlertDialog_AppCompat_Light 0x7f110001
 int style AndroidThemeColorAccentYellow 0x7f110002
