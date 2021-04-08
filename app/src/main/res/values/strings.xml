@@ -17,7 +17,7 @@
 
 
     //Necesario para guardar sesiones
-    //<string name="prefs_file">com.exampl</string>
+    //<string name="prefs_file">com.example.chitchat.PREFERENCE_FILE_KEY</string>
 
     <string name="Correo">Correo</string>
     <string name="Contraseña">Contraseña</string>

@@ -95,18 +95,12 @@ class LoginFragment : Fragment() {
                 Toast.makeText(context, "Debe rellenar los campos", Toast.LENGTH_SHORT).show()
             } else {
                 activity?.let { it1 ->
-                    auth.signInWithEmailAndPassword(
-                            Correo_edittext.text.toString(),
-                            Password_edittext.text.toString()
-                    )
+                    auth.signInWithEmailAndPassword(Correo_edittext.text.toString(), Password_edittext.text.toString())
                             .addOnCompleteListener(it1) { task ->
                                 if (task.isSuccessful) {
                                     //Navegacion a la ventana de Main Activity
-                                    Log.d("MainActivity","error")
-                                    NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_mainFragment)
-
+                                    mandardatos(Correo_edittext.text.toString())
                                 } else {
-                                    Log.d("MainActivity","error")
                                     Alerta()
                                 }
                             }
@@ -122,6 +116,11 @@ class LoginFragment : Fragment() {
             Log.d("MainActivity", "Recuperar")
 
         }
+    }
+
+    private fun mandardatos(email: String) {
+        val MainFragment = Intent(this)
+        NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_mainFragment)
     }
 
     private fun sesion() {
