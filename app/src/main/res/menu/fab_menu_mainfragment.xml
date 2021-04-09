@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nuevoChat"
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:title="Nuevo chat" />
+    <item android:id="@+id/nuevoGrupo"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="Nuevo grupo" />
+    <item android:id="@+id/nuevaSala"
+        android:icon="@drawable/ic_sensor_door_black_24dp"
+        android:title="Nueva sala" />
+</menu>

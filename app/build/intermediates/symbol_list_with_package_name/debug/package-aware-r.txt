@@ -1812,7 +1812,10 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_add_black_24dp
+drawable ic_chat_black_24dp
 drawable ic_clock_black_24dp
+drawable ic_group_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1823,6 +1826,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_sensor_door_black_24dp
 drawable insertarfoto
 drawable logo
 drawable logogoogle
@@ -1951,7 +1955,6 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -2075,6 +2078,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab_nuevaAccion
 id fade
 id fill
 id fill_horizontal
@@ -2134,6 +2138,7 @@ id listMode
 id list_item
 id loginFragment
 id mainFragment
+id mainRecyclerView
 id masked
 id material_clock_display
 id material_clock_face
@@ -2192,10 +2197,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
-id nav_gallery
-id nav_home
 id nav_host_fragment_container
-id nav_slideshow
 id navigation_header_container
 id never
 id never_display
@@ -2205,6 +2207,9 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id nuevaSala
+id nuevoChat
+id nuevoGrupo
 id off
 id on
 id open_graph
@@ -2339,6 +2344,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -2540,8 +2546,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu activity_main_drawer
-menu main
+menu fab_menu_mainfragment
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
