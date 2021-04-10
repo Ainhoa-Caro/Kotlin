@@ -8,6 +8,10 @@
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_return.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_settings_return.xml"
+    },
+    {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -24,12 +28,24 @@
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
     },
     {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_chat.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_settings_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_notifications.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_settings_notifications.xml"
+    },
+    {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings_account.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\layout\\fragment_settings_account.xml"
     },
     {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_insertarfoto.png.flat",
@@ -48,6 +64,18 @@
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings_profile.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\layout\\fragment_settings_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\xml_root_preferences_chats.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\xml\\root_preferences_chats.xml"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\xml_root_preferences_account.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\xml\\root_preferences_account.xml"
+    },
+    {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logogoogle.png.flat",
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable-v24\\logogoogle.png"
     },
@@ -56,8 +84,24 @@
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_help.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_settings_help.xml"
+    },
+    {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_account.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_settings_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings_chats.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\layout\\fragment_settings_chats.xml"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_invite.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_settings_invite.xml"
     },
     {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
@@ -74,6 +118,10 @@
     {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\xml_root_preferences.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\xml\\root_preferences.xml"
     },
     {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -120,11 +168,23 @@
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\textviewlogin.xml"
     },
     {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_language.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_settings_language.xml"
+    },
+    {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_gallery.xml.flat",
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
     },
     {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\xml_root_preferences_profile.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\xml\\root_preferences_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\borja\\Documents\\Ainhoa\\TFC\\chitchat\\app\\src\\main\\res\\layout\\fragment_settings.xml"
     }
 ]

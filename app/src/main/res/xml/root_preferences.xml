@@ -2,68 +2,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
+    <PreferenceCategory android:title="Perfil">
 
-    <PreferenceCategory android:title="Perfil"
-        >
-
-        <EditTextPreference
-            android:defaultValue="Perfil"
-            android:key="edit_text_preference_1"
+        <Preference
+            android:icon="@mipmap/ic_launcher_round"
+            android:key="edit_text_preference_profile"
             android:selectAllOnFocus="true"
             android:singleLine="false"
-            android:title="@string/UserName"
+
             android:summary="@string/settings_Profile_Info"
-            android:icon="@mipmap/ic_launcher_round"
-            />
+            android:title="@string/UserName" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Ajustes cuenta">
-        <EditTextPreference
+    <PreferenceCategory android:title="Ajustes">
+        <Preference
             android:layout_width="wrap_content"
-            android:key="edit_text_preference_1"
+            android:icon="@drawable/ic_settings_account"
+            android:key="edit_text_preference_account"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:title="Account"
             android:summary="Privacidad y seguridad"
-            android:icon="@drawable/ic_settings_account"/>
-        <EditTextPreference
+            android:title="Account" />
+        <Preference
             android:layout_width="wrap_content"
-            android:key="edit_text_preference_1"
+            android:icon="@drawable/ic_settings_chat"
+            android:key="edit_text_preference_chats"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:title="Chats"
             android:summary="Tema, fondo de pantalla, historial de chat"
-            android:icon="@drawable/ic_settings_chat"/>
+            android:title="Chats" />
         <EditTextPreference
             android:layout_width="wrap_content"
-            android:key="edit_text_preference_1"
+            android:icon="@drawable/ic_settings_notifications"
+            android:key="edit_text_preference_notification"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:title="Notificaciones"
             android:summary="Tono de mensajes y grupos"
-            android:icon="@drawable/ic_settings_notifications"/>
+            android:title="Notificaciones" />
         <EditTextPreference
             android:layout_width="wrap_content"
-            android:key="edit_text_preference_1"
+            android:icon="@drawable/ic_settings_language"
+            android:key="edit_text_preference_language"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:title="Idioma"
             android:summary="Change language"
-            android:icon="@drawable/ic_settings_language"/>
-        <EditTextPreference
+            android:title="Idioma" />
+        <Preference
             android:layout_width="wrap_content"
-            android:key="edit_text_preference_1"
+            android:icon="@drawable/ic_settings_help"
+            android:key="edit_text_preference_help"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:title="Ayuda"
             android:summary="Centro de ayuda, contactanos, politica de privacidad"
-            android:icon="@drawable/ic_settings_help"/>
+            android:title="Ayuda" />
         <EditTextPreference
             android:layout_width="wrap_content"
-            android:key="edit_text_preference_1"
+            android:icon="@drawable/ic_settings_invite"
+            android:key="edit_text_preference_invite"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:title="Invitar usuario"
-            android:icon="@drawable/ic_settings_invite"/>
+            android:title="Invitar usuario" />
 
     </PreferenceCategory>
 

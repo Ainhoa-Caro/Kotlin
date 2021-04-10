@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory android:title="Cuenta">
+
+        <CheckBoxPreference
+            android:key="settings_account_verification_switch"
+            android:defaultValue="false"
+
+            android:summary="Activar la verificacion en 2 pasos para mayor seguirdad"
+            android:title="Permitir verificacion" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:defaultValue=""
+            android:enabled="false"
+            android:key="settings_account_verificacion"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Introduccion de un codigo que se pedira aleatoriamente cuando abras la app"
+            android:title="Verificacion en dos pasos" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:key="settings_account_change"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Cambiar el numero o mail asociado a la cuenta"
+            android:title="cambiar numero o mail" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="settings_account_groups"
+            android:summary="Permitir que cualquiera te añada a grupos"
+            android:title="Grupos" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+
+            android:key="settings_account_ban_users"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Contactos que has bloqueado"
+            android:title="Contactos bloqueados" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:key="settings_account_delete_account"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Eliminar cuenta" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,2 @@
+com/example/chitchat/test/BuildConfig.java
+ com.example.chitchat.test.BuildConfig

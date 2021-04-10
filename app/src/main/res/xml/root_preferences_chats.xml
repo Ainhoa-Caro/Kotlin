@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:layout_width="wrap_content">
+
+
+
+
+            <EditTextPreference
+
+                android:layout_width="wrap_content"
+                android:key="edit_text_preference_chats_UserName"
+                android:selectAllOnFocus="true"
+                android:singleLine="false"
+                android:summary="@string/UserName"
+                android:title="chat 1" />
+
+            <EditTextPreference
+
+                android:layout_width="wrap_content"
+                android:key="edit_text_preference_chats_info"
+                android:selectAllOnFocus="true"
+                android:singleLine="false"
+                android:summary="@string/settings_Profile_Info"
+                android:title="chat2" />
+
+        </PreferenceCategory>
+    </PreferenceScreen>
+</layout>

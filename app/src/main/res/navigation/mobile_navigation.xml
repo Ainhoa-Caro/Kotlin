@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/settingsFragment">
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.chitchat.login.LoginFragment"
@@ -32,6 +32,36 @@
         tools:layout="@layout/fragment_registro" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.chitchat.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:name="com.example.chitchat.settings.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_fragment_settings_profile"
+            app:destination="@id/fragment_settings_profile" />
+        <action
+            android:id="@+id/action_settingsFragment_to_fragment_settings_chats"
+            app:destination="@id/fragment_settings_chats" />
+        <action
+            android:id="@+id/action_settingsFragment_to_fragment_settings_account"
+            app:destination="@id/fragment_settings_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_settings_profile"
+        android:name="com.example.chitchat.settings.fragments.fragment_settings_profile"
+        android:label="fragment_settings_profile"
+        tools:layout="@layout/fragment_settings_profile" >
+        <action
+            android:id="@+id/action_fragment_settings_profile_to_settingsFragment2"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_settings_chats"
+        android:name="com.example.chitchat.settings.fragments.fragment_settings_chats"
+        android:label="fragment_settings_chats"
+        tools:layout="@layout/fragment_settings_chats" />
+    <fragment
+        android:id="@+id/fragment_settings_account"
+        android:name="com.example.chitchat.settings.fragments.fragment_settings_account"
+        android:label="fragment_settings_account"
+        tools:layout="@layout/fragment_settings_account" />
 </navigation>
