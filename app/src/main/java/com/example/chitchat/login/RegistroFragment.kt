@@ -37,6 +37,7 @@ class RegistroFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.fragment_registro, container, false)
         nombreusuario = root.findViewById<EditText>(R.id.Nombre_edittext)
+
         email = root.findViewById<EditText>(R.id.Correo_edittext)
         passwordone = root.findViewById<EditText>(R.id.Passwordone_edittext)
         passwordtwo = root.findViewById<EditText>(R.id.Passwordotwo_edittext)
