@@ -20,7 +20,12 @@
         android:id="@+id/mainFragment"
         android:name="com.example.chitchat.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <argument
+            android:name="correo"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
     <fragment
         android:id="@+id/registroFragment"
         android:name="com.example.chitchat.login.RegistroFragment"

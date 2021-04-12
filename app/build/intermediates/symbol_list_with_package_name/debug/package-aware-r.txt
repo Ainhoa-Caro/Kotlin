@@ -2088,6 +2088,7 @@ id floating
 id forever
 id fragment
 id fragment_container_view_tag
+id general
 id ghost_view
 id ghost_view_holder
 id gone

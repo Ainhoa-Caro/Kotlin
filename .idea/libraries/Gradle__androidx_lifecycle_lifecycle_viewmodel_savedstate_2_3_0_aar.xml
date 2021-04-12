@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e80db1767967bf51f8bfea7d466e33b2/jetified-lifecycle-viewmodel-savedstate-2.3.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e80db1767967bf51f8bfea7d466e33b2/jetified-lifecycle-viewmodel-savedstate-2.3.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e80db1767967bf51f8bfea7d466e33b2/jetified-lifecycle-viewmodel-savedstate-2.3.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6467727adfd90adb642b98852540139b/jetified-lifecycle-viewmodel-savedstate-2.3.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6467727adfd90adb642b98852540139b/jetified-lifecycle-viewmodel-savedstate-2.3.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6467727adfd90adb642b98852540139b/jetified-lifecycle-viewmodel-savedstate-2.3.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

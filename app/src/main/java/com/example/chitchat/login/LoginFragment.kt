@@ -1,4 +1,5 @@
 package com.example.chitchat.login
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -9,15 +10,13 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
-import com.example.chitchat.MainFragment
 import com.example.chitchat.R
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
-import com.facebook.login.LoginFragment
 import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -28,38 +27,39 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_login.*
 
 
 class LoginFragment : Fragment() {
-
 
     private lateinit var btgoogle: Button
     private lateinit var btfacebook: Button
     private lateinit var btlogin: Button
     private lateinit var btregistro: Button
     private lateinit var tvrecuperar:TextView
-
     private val GOOGLE_SIGN_IN = 100
     private var auth: FirebaseAuth = Firebase.auth
     private val callbackManager = CallbackManager.Factory.create()
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
+
         val root = inflater.inflate(R.layout.fragment_login, container, false)
         btgoogle=root.findViewById<Button>(R.id.boton_google)
         btfacebook=root.findViewById<Button>(R.id.boton_facebook)
         btlogin=root.findViewById<Button>(R.id.Login_boton)
         btregistro=root.findViewById<Button>(R.id.Registrarse_boton)
         tvrecuperar=root.findViewById<TextView>(R.id.RecuperarContraseña_textView)
-        setup()
+        setup(root)
         sesion()
         return root
     }//Fin del Oncreate
 
-    private fun setup() {
+    @SuppressLint("ResourceType")
+    private fun setup(root:View) {
         // Boton que inicia sesion con Google
         btgoogle.setOnClickListener {
             val configuraciongoogle = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -75,31 +75,31 @@ class LoginFragment : Fragment() {
         btfacebook.setOnClickListener {
             LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
             LoginManager.getInstance().registerCallback(callbackManager,
-                object : FacebookCallback<LoginResult> {
-                    override fun onSuccess(result: LoginResult?) {
-                        result?.let {
-                            val token = it.accessToken
-                            val credencial = FacebookAuthProvider.getCredential(token.token)
-                            FirebaseAuth.getInstance().signInWithCredential(credencial)
-                                .addOnCompleteListener { task2 ->
-                                    if (task2.isSuccessful) {
-                                        NavHostFragment.findNavController(this@LoginFragment)
-                                            .navigate(
-                                                R.id.action_loginFragment_to_mainFragment
-                                            )
-                                    }
-                                }
+                    object : FacebookCallback<LoginResult> {
+                        override fun onSuccess(result: LoginResult?) {
+                            result?.let {
+                                val token = it.accessToken
+                                val credencial = FacebookAuthProvider.getCredential(token.token)
+                                FirebaseAuth.getInstance().signInWithCredential(credencial)
+                                        .addOnCompleteListener { task2 ->
+                                            if (task2.isSuccessful) {
+                                                NavHostFragment.findNavController(this@LoginFragment)
+                                                        .navigate(
+                                                                R.id.action_loginFragment_to_mainFragment
+                                                        )
+                                            }
+                                        }
+                            }
                         }
-                    }
 
-                    override fun onCancel() {
-                        Alerta()
-                    }
+                        override fun onCancel() {
+                            Alerta()
+                        }
 
-                    override fun onError(error: FacebookException?) {
-                        Alerta()
-                    }
-                })
+                        override fun onError(error: FacebookException?) {
+                            Alerta()
+                        }
+                    })
         }
         //Boton que incia  sesion con usuario y contraseña
         btlogin.setOnClickListener {
@@ -110,14 +110,13 @@ class LoginFragment : Fragment() {
             } else {
                 activity?.let { it1 ->
                     auth.signInWithEmailAndPassword(
-                        Correo_edittext.text.toString(),
-                        Password_edittext.text.toString()
+                            Correo_edittext.text.toString(),
+                            Password_edittext.text.toString()
                     )
                             .addOnCompleteListener(it1) { task ->
                                 if (task.isSuccessful) {
-
-                                    //Navegacion a la ventana de Main Activity
-                                    NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_mainFragment)
+                                    val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(Correo_edittext.text.toString())
+                                    Navigation.findNavController(root).navigate(action)
                                 } else {
                                     Alerta()
                                 }
@@ -134,10 +133,6 @@ class LoginFragment : Fragment() {
             Log.d("MainActivity", "Recuperar")
 
         }
-    }
-
-    private fun mandardatos(email: String) {
-
     }
 
     private fun sesion() {
@@ -166,7 +161,7 @@ class LoginFragment : Fragment() {
                     val credencial = GoogleAuthProvider.getCredential(account.idToken, null)
                     activity?.let {
                         FirebaseAuth.getInstance().signInWithCredential(credencial).addOnCompleteListener(
-                            it
+                                it
                         ) { task ->
                             if (task.isSuccessful) {
                                 NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_mainFragment)
