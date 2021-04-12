@@ -31,6 +31,11 @@ class SettingsPreferences : PreferenceFragmentCompat() {
         val view = super.onCreateView(inflater, container, savedInstanceState)
         //val root = inflater.inflate(R.layout.fragment_settings, container, false)
         //profile sin implementar
+/*
+        val preference = preferenceManager.findPreference<Preference>("messages")
+        preference?.fragment = MessageSettingsFragment.javaclass.name.removeSuffix("\$Companion")
+
+
         profilePreference= findPreference("edit_text_preference_profile")!!
 
         profilePreference.onPreferenceClickListener = Preference.OnPreferenceClickListener { v: Preference? ->
@@ -95,7 +100,7 @@ class SettingsPreferences : PreferenceFragmentCompat() {
 
 
 
-
+*/
 
         return view
     }

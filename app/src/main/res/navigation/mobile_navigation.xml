@@ -49,11 +49,7 @@
         android:id="@+id/fragment_settings_profile"
         android:name="com.example.chitchat.settings.fragments.fragment_settings_profile"
         android:label="fragment_settings_profile"
-        tools:layout="@layout/fragment_settings_profile" >
-        <action
-            android:id="@+id/action_fragment_settings_profile_to_settingsFragment2"
-            app:destination="@id/settingsFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_settings_profile" />
     <fragment
         android:id="@+id/fragment_settings_chats"
         android:name="com.example.chitchat.settings.fragments.fragment_settings_chats"
