@@ -20,9 +20,15 @@ class MainFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
         val correo = requireArguments().getString("correo")
-        Toast.makeText(context, correo, Toast.LENGTH_SHORT).show()
+        //Guardado de datos
+        val sharedPref = activity?.getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)?.edit()
+        if (sharedPref != null) {
+            Toast.makeText(context, correo, Toast.LENGTH_SHORT).show()
+            sharedPref.putString("correo",correo)
+            sharedPref.apply()
+        }
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
     }

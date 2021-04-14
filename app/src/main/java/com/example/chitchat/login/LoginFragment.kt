@@ -1,5 +1,6 @@
 package com.example.chitchat.login
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -53,10 +54,16 @@ class LoginFragment : Fragment() {
         btlogin=root.findViewById<Button>(R.id.Login_boton)
         btregistro=root.findViewById<Button>(R.id.Registrarse_boton)
         tvrecuperar=root.findViewById<TextView>(R.id.RecuperarContraseña_textView)
+        sesion(root)
         setup(root)
-        sesion()
+
         return root
     }//Fin del Oncreate
+
+    override fun onStart() {
+        super.onStart()
+        general.visibility = View.VISIBLE
+    }
 
     @SuppressLint("ResourceType")
     private fun setup(root:View) {
@@ -117,6 +124,7 @@ class LoginFragment : Fragment() {
                                 if (task.isSuccessful) {
                                     val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(Correo_edittext.text.toString())
                                     Navigation.findNavController(root).navigate(action)
+
                                 } else {
                                     Alerta()
                                 }
@@ -135,8 +143,16 @@ class LoginFragment : Fragment() {
         }
     }
 
-    private fun sesion() {
+    private fun sesion(root : View) {
+        val sharedPref = activity?.getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
+        val email = sharedPref?.getString("correo",null)
+        Toast.makeText(context, email, Toast.LENGTH_SHORT).show()
+        if(email != null){
+            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(email)
+            Navigation.findNavController(root).navigate(action)
+            general.visibility = View.INVISIBLE
 
+        }
     }
 
 
