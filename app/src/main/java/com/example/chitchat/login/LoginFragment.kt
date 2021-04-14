@@ -1,4 +1,5 @@
 package com.example.chitchat.login
+
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
@@ -10,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.IdRes
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
@@ -38,25 +40,20 @@ class LoginFragment : Fragment() {
     private lateinit var btfacebook: Button
     private lateinit var btlogin: Button
     private lateinit var btregistro: Button
-    private lateinit var tvrecuperar:TextView
+    private lateinit var tvrecuperar: TextView
     private val GOOGLE_SIGN_IN = 100
     private var auth: FirebaseAuth = Firebase.auth
     private val callbackManager = CallbackManager.Factory.create()
-    override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val root = inflater.inflate(R.layout.fragment_login, container, false)
-        btgoogle=root.findViewById<Button>(R.id.boton_google)
-        btfacebook=root.findViewById<Button>(R.id.boton_facebook)
-        btlogin=root.findViewById<Button>(R.id.Login_boton)
-        btregistro=root.findViewById<Button>(R.id.Registrarse_boton)
-        tvrecuperar=root.findViewById<TextView>(R.id.RecuperarContraseña_textView)
-        sesion(root)
+        btgoogle = root.findViewById<Button>(R.id.boton_google)
+        btfacebook = root.findViewById<Button>(R.id.boton_facebook)
+        btlogin = root.findViewById<Button>(R.id.Login_boton)
+        btregistro = root.findViewById<Button>(R.id.Registrarse_boton)
+        tvrecuperar = root.findViewById<TextView>(R.id.RecuperarContraseña_textView)
         setup(root)
-
+        sesion(root)
         return root
     }//Fin del Oncreate
 
@@ -66,7 +63,7 @@ class LoginFragment : Fragment() {
     }
 
     @SuppressLint("ResourceType")
-    private fun setup(root:View) {
+    private fun setup(root: View) {
         // Boton que inicia sesion con Google
         btgoogle.setOnClickListener {
             val configuraciongoogle = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -76,6 +73,7 @@ class LoginFragment : Fragment() {
             val cliente = activity?.let { it1 -> GoogleSignIn.getClient(it1, configuraciongoogle) }
             cliente?.signOut()
             startActivityForResult(cliente?.signInIntent, GOOGLE_SIGN_IN)
+
 
         }
         //Boton que inicia sesion con Facebook
@@ -90,9 +88,7 @@ class LoginFragment : Fragment() {
                                 FirebaseAuth.getInstance().signInWithCredential(credencial)
                                         .addOnCompleteListener { task2 ->
                                             if (task2.isSuccessful) {
-                                                NavHostFragment.findNavController(this@LoginFragment)
-                                                        .navigate(
-                                                                R.id.action_loginFragment_to_mainFragment
+                                                NavHostFragment.findNavController(this@LoginFragment).navigate(R.id.action_loginFragment_to_mainFragment
                                                         )
                                             }
                                         }
@@ -116,19 +112,15 @@ class LoginFragment : Fragment() {
                 Toast.makeText(context, "Debe rellenar los campos", Toast.LENGTH_SHORT).show()
             } else {
                 activity?.let { it1 ->
-                    auth.signInWithEmailAndPassword(
-                            Correo_edittext.text.toString(),
-                            Password_edittext.text.toString()
-                    )
-                            .addOnCompleteListener(it1) { task ->
-                                if (task.isSuccessful) {
-                                    val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(Correo_edittext.text.toString())
-                                    Navigation.findNavController(root).navigate(action)
+                    auth.signInWithEmailAndPassword(Correo_edittext.text.toString(), Password_edittext.text.toString()).addOnCompleteListener(it1) { task ->
+                        if (task.isSuccessful) {
+                            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(Correo_edittext.text.toString())
+                            Navigation.findNavController(root).navigate(action)
 
-                                } else {
-                                    Alerta()
-                                }
-                            }
+                        } else {
+                            Alerta()
+                        }
+                    }
                 }
             }
         }
@@ -143,21 +135,19 @@ class LoginFragment : Fragment() {
         }
     }
 
-    private fun sesion(root : View) {
+   private fun sesion(root: View) {
         val sharedPref = activity?.getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
-        val email = sharedPref?.getString("correo",null)
-        Toast.makeText(context, email, Toast.LENGTH_SHORT).show()
-        if(email != null){
+        val email = sharedPref?.getString("correo", null)
+        if (email != null) {
             val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(email)
-            Navigation.findNavController(root).navigate(action)
-            general.visibility = View.INVISIBLE
+            NavHostFragment.findNavController(this).navigate(action)
 
         }
     }
 
 
     //Se muestra cuando no se puede iniciar sesion
-    private fun Alerta(){
+    private fun Alerta() {
         val builder = context?.let { AlertDialog.Builder(it) }
         builder?.setTitle("Error")
         builder?.setMessage("Se ha producido un error autentificando al usuario")
@@ -169,11 +159,11 @@ class LoginFragment : Fragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         callbackManager.onActivityResult(requestCode, resultCode, data)
         super.onActivityResult(requestCode, resultCode, data)
-       if(requestCode == GOOGLE_SIGN_IN){
+        if (requestCode == GOOGLE_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-            try{
+            try {
                 val account = task.getResult(ApiException::class.java)
-                if(account != null) {
+                if (account != null) {
                     val credencial = GoogleAuthProvider.getCredential(account.idToken, null)
                     activity?.let {
                         FirebaseAuth.getInstance().signInWithCredential(credencial).addOnCompleteListener(
@@ -181,13 +171,13 @@ class LoginFragment : Fragment() {
                         ) { task ->
                             if (task.isSuccessful) {
                                 NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_mainFragment)
-                            }else{
+                            } else {
                                 Alerta()
                             }
                         }
                     }
                 }
-            }catch (e: ApiException){
+            } catch (e: ApiException) {
                 Alerta()
             }
         }
