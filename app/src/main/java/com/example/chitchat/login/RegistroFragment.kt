@@ -85,7 +85,7 @@ class RegistroFragment : Fragment() {
         }
     }
     //Funcion para registrar usuarios
-    private fun registrarUser(usuario: User) {
+    public fun registrarUser(usuario: User) {
         activity?.let {
             auth.createUserWithEmailAndPassword(usuario.email, usuario.password)
                 .addOnCompleteListener(it) { task ->

@@ -3,6 +3,7 @@ package com.example.chitchat.login
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,12 +12,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.annotation.IdRes
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import com.example.chitchat.R
+import com.example.chitchat.pojos.User
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -29,13 +30,15 @@ import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_login.*
 
 
-class LoginFragment : Fragment() {
 
+class LoginFragment : Fragment() {
     private lateinit var btgoogle: Button
     private lateinit var btfacebook: Button
     private lateinit var btlogin: Button
@@ -43,6 +46,7 @@ class LoginFragment : Fragment() {
     private lateinit var tvrecuperar: TextView
     private val GOOGLE_SIGN_IN = 100
     private var auth: FirebaseAuth = Firebase.auth
+    private var database: DatabaseReference = Firebase.database.reference
     private val callbackManager = CallbackManager.Factory.create()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
@@ -88,8 +92,11 @@ class LoginFragment : Fragment() {
                                 FirebaseAuth.getInstance().signInWithCredential(credencial)
                                         .addOnCompleteListener { task2 ->
                                             if (task2.isSuccessful) {
-                                                NavHostFragment.findNavController(this@LoginFragment).navigate(R.id.action_loginFragment_to_mainFragment
-                                                        )
+                                                task2.result?.user?.email
+                                                val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(task2.result?.user?.email)
+                                                NavHostFragment.findNavController(this@LoginFragment).navigate(action)
+
+
                                             }
                                         }
                             }
@@ -134,7 +141,7 @@ class LoginFragment : Fragment() {
 
         }
     }
-
+//Permite tener una sesion iniciada
    private fun sesion(root: View) {
         val sharedPref = activity?.getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
         val email = sharedPref?.getString("correo", null)
@@ -163,14 +170,17 @@ class LoginFragment : Fragment() {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             try {
                 val account = task.getResult(ApiException::class.java)
+                Log.d("MainActivity", account.toString())
                 if (account != null) {
                     val credencial = GoogleAuthProvider.getCredential(account.idToken, null)
+
                     activity?.let {
                         FirebaseAuth.getInstance().signInWithCredential(credencial).addOnCompleteListener(
                                 it
                         ) { task ->
                             if (task.isSuccessful) {
-                                NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_mainFragment)
+                                val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(account.email)
+                                NavHostFragment.findNavController(this).navigate(action)
                             } else {
                                 Alerta()
                             }
@@ -183,5 +193,7 @@ class LoginFragment : Fragment() {
         }
 
     }
+
+
 
 }
