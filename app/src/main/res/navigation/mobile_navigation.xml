@@ -22,8 +22,11 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
+            android:id="@+id/action_mainFragment_to_settingsPreferences"
+            app:destination="@id/settingsPreferences" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingsPreferences2"
+            app:destination="@id/settingsPreferences" />
     </fragment>
     <fragment
         android:id="@+id/registroFragment"
@@ -31,33 +34,29 @@
         android:label="fragment_registro"
         tools:layout="@layout/fragment_registro" />
     <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.example.chitchat.settings.fragments.SettingsFragment"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" >
+        android:id="@+id/settingsPreferences"
+        android:name="com.example.chitchat.settings.SettingsPreferences"
+        android:label="SettingsPreferences" >
         <action
-            android:id="@+id/action_settingsFragment_to_fragment_settings_profile"
-            app:destination="@id/fragment_settings_profile" />
+            android:id="@+id/action_settingsPreferences_to_settingsPreferencesChats"
+            app:destination="@id/settingsPreferencesChats" />
         <action
-            android:id="@+id/action_settingsFragment_to_fragment_settings_chats"
-            app:destination="@id/fragment_settings_chats" />
+            android:id="@+id/action_settingsPreferences_to_settingsPreferencesProfile"
+            app:destination="@id/settingsPreferencesProfile" />
         <action
-            android:id="@+id/action_settingsFragment_to_fragment_settings_account"
-            app:destination="@id/fragment_settings_account" />
+            android:id="@+id/action_settingsPreferences_to_settingsPreferencesProfile2"
+            app:destination="@id/settingsPreferencesProfile" />
     </fragment>
     <fragment
-        android:id="@+id/fragment_settings_profile"
-        android:name="com.example.chitchat.settings.fragments.fragment_settings_profile"
-        android:label="fragment_settings_profile"
-        tools:layout="@layout/fragment_settings_profile" />
+        android:id="@+id/settingsPreferencesProfile"
+        android:name="com.example.chitchat.settings.SettingsPreferencesProfile"
+        android:label="SettingsPreferencesProfile" />
     <fragment
-        android:id="@+id/fragment_settings_chats"
-        android:name="com.example.chitchat.settings.fragments.fragment_settings_chats"
-        android:label="fragment_settings_chats"
-        tools:layout="@layout/fragment_settings_chats" />
+        android:id="@+id/settingsPreferencesChats"
+        android:name="com.example.chitchat.settings.SettingsPreferencesChats"
+        android:label="SettingsPreferencesChats" />
     <fragment
-        android:id="@+id/fragment_settings_account"
-        android:name="com.example.chitchat.settings.fragments.fragment_settings_account"
-        android:label="fragment_settings_account"
-        tools:layout="@layout/fragment_settings_account" />
+        android:id="@+id/settingsPreferencesAccount"
+        android:name="com.example.chitchat.settings.SettingsPreferencesAccount"
+        android:label="SettingsPreferencesAccount" />
 </navigation>
