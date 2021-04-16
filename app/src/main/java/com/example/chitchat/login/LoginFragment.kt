@@ -82,6 +82,10 @@ class LoginFragment : Fragment() {
         }
         //Boton que inicia sesion con Facebook
         btfacebook.setOnClickListener {
+            var nickglobal: String? = null
+            var informacion: String? = null
+            var telefono: Int? = null
+            var foto: Uri? = null
             LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
             LoginManager.getInstance().registerCallback(callbackManager,
                     object : FacebookCallback<LoginResult> {
@@ -93,6 +97,9 @@ class LoginFragment : Fragment() {
                                         .addOnCompleteListener { task2 ->
                                             if (task2.isSuccessful) {
                                                 task2.result?.user?.email
+                                                task2.result?.user?.displayName
+                                                var usuario: User = User(task2.result?.user?.displayName, task2.result!!.user.email, nickglobal, null, foto, informacion, telefono)
+                                                registrarUser(usuario)
                                                 val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(task2.result?.user?.email)
                                                 NavHostFragment.findNavController(this@LoginFragment).navigate(action)
 
@@ -164,6 +171,10 @@ class LoginFragment : Fragment() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        var nickglobal: String? = null
+        var informacion: String? = null
+        var telefono: Int? = null
+        var foto: Uri? = null
         callbackManager.onActivityResult(requestCode, resultCode, data)
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == GOOGLE_SIGN_IN) {
@@ -179,6 +190,8 @@ class LoginFragment : Fragment() {
                                 it
                         ) { task ->
                             if (task.isSuccessful) {
+                                var usuario: User = User(account.displayName, account.email!!, nickglobal, null, foto, informacion, telefono)
+                                registrarUser(usuario)
                                 val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(account.email)
                                 NavHostFragment.findNavController(this).navigate(action)
                             } else {
@@ -191,6 +204,26 @@ class LoginFragment : Fragment() {
                 Alerta()
             }
         }
+
+    }
+    //Funcion para registrar usuarios mediante FB y Google
+    public fun registrarUser(usuario: User) {
+                            val usuarios = HashMap<String, String?>()
+                            usuarios["Nombre usuario"] = usuario.nombreusuario
+                            usuarios["Email"] = usuario.email
+                            usuarios["Nick Global"] = usuario.nickglobal.toString()
+                            usuarios["Password"] = usuario.password
+                            usuarios["Foto"] = usuario.foto.toString()
+                            usuarios["Informacion"] = usuario.informacion.toString()
+                            usuarios["Telefono"] = usuario.telefono.toString()
+                            var id: String = auth.currentUser.getUid()
+                            database.child("users").child(id).setValue(usuarios).addOnCompleteListener() { task2 ->
+                                if (task2.isSuccessful) {
+                                    NavHostFragment.findNavController(this).popBackStack()
+                                }
+
+                        }
+
 
     }
 
