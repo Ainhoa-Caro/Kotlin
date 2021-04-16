@@ -35,6 +35,7 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] C:\Users\borja\.gradle\ca
 MERGED from [androidx.navigation:navigation-ui:2.3.4] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\b8ea3d7e4063f9be59f849e8524edd12\navigation-ui-2.3.4\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\07c81ab9e12e9bb3151dee387d940a66\material-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\fae3eafc652ef82af48d7250dbf03798\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\60fa706bfb479edd13c987eb79946d4d\preference-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\4661033a4323dcadfea2f6b3cc3e9cf3\jetified-facebook-android-sdk-4.42.0\AndroidManifest.xml:21:1-31:12
 MERGED from [com.facebook.android:facebook-login:4.42.0] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\c5eacc96a9fd8a2361ade37c525ae117\jetified-facebook-login-4.42.0\AndroidManifest.xml:21:1-31:12
 MERGED from [com.facebook.android:facebook-share:4.42.0] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\8a48a34ab24547f602d974d1c7204f3e\jetified-facebook-share-4.42.0\AndroidManifest.xml:21:1-31:12
@@ -338,6 +339,8 @@ MERGED from [com.google.android.material:material:1.3.0] C:\Users\borja\.gradle\
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\07c81ab9e12e9bb3151dee387d940a66\material-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\fae3eafc652ef82af48d7250dbf03798\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\fae3eafc652ef82af48d7250dbf03798\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\60fa706bfb479edd13c987eb79946d4d\preference-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.1] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\60fa706bfb479edd13c987eb79946d4d\preference-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\4661033a4323dcadfea2f6b3cc3e9cf3\jetified-facebook-android-sdk-4.42.0\AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\4661033a4323dcadfea2f6b3cc3e9cf3\jetified-facebook-android-sdk-4.42.0\AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-login:4.42.0] C:\Users\borja\.gradle\caches\transforms-2\files-2.1\c5eacc96a9fd8a2361ade37c525ae117\jetified-facebook-login-4.42.0\AndroidManifest.xml:24:5-26:41
