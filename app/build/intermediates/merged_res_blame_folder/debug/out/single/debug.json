@@ -1,5 +1,93 @@
 [
     {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_help_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_help_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_group_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_group_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_main.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\fragment_registro.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_more_vert_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_more_vert_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_settings_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_logout_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_logout_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\anim_from_bottom_animation.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\anim\\from_bottom_animation.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\menu_mainfragment_toolbar_itemlist.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\menu\\mainfragment_toolbar_itemlist.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_camera.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_sensor_door_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_sensor_door_black_24dp.xml"
+    },
+    {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botongoogle.xml.flat",
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\botongoogle.xml"
     },
@@ -12,44 +100,32 @@
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\anim_rotate_open_animation.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\anim\\rotate_open_animation.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logogoogle.png.flat",
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable-v24\\logogoogle.png"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_group_black_24dp.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_group_black_24dp.xml"
-    },
-    {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_main.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\fragment_main.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gardient_background.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\gardient_background.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\fragment_registro.xml"
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_conversaciones.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\item_list_conversaciones.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\anim_to_bottom_animation.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\anim\\to_bottom_animation.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
@@ -60,10 +136,6 @@
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\fragment_login.xml"
-    },
-    {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -72,16 +144,20 @@
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_account_circle_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_account_circle_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\anim_rotate_close_animation.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\anim\\rotate_close_animation.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_insertarfoto.png.flat",
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\insertarfoto.png"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -100,20 +176,12 @@
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\splash.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\menu_fab_menu_mainfragment.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\menu\\fab_menu_mainfragment.xml"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_drawer_right_header.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\drawer_right_header.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_textviewlogin.xml.flat",
@@ -124,19 +192,7 @@
         "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\botoneslogin.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_camera.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\logo.png"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_sensor_door_black_24dp.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\drawable\\ic_sensor_door_black_24dp.xml"
+        "merged": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\build\\intermediates\\res\\merged\\debug\\menu_drawer_right_itemlist.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\SourceTree\\ChitChat\\app\\src\\main\\res\\menu\\drawer_right_itemlist.xml"
     }
 ]

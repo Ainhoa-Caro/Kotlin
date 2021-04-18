@@ -1,15 +1,17 @@
-package com.example.chitchat
+package com.example.chitchat.fragments
 
 import android.os.Bundle
 import android.view.*
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Toast
-import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
+import com.example.chitchat.R
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : Fragment() {
@@ -48,6 +50,7 @@ class MainFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_main, container, false)
 
 
+        //Float buttons (acciones de creacion de chats)
         val fab_nuevaAccion = root.findViewById<View>(R.id.fab_nuevaAccion)
         val fab_nuevoChat = root.findViewById<View>(R.id.fab_nuevochat)
         val fab_nuevoGrupo = root.findViewById<View>(R.id.fab_nuevogrupo)
@@ -72,6 +75,7 @@ class MainFragment : Fragment() {
             Toast.makeText(context, "Crear nueva sala", Toast.LENGTH_SHORT).show()
         }
 
+        //Drawer layput (menu desplegable derecho)
         //Conectas la actividad con el drawer layout para poder usarlo
         val drawerLayout: DrawerLayout = root.findViewById(R.id.drawer_layout)
         val toggle = ActionBarDrawerToggle(requireActivity(), drawerLayout, 0, 0)
@@ -81,22 +85,32 @@ class MainFragment : Fragment() {
         val navIzq: NavigationView = root.findViewById(R.id.drawer_izq)
         navIzq.setNavigationItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
-                R.id.abrirPerfilConfig -> //Abrir config del perfil
+                //Abrir config del perfil
+                R.id.abrirPerfilConfig ->{
                     Toast.makeText(context, "Abrir perfil", Toast.LENGTH_SHORT).show()
+                }
 
-                R.id.abrirAppConfig -> //Abrir configuracion de la app o settings (Ainhoa)
+                //Abrir configuracion de la app o settings (Ainhoa)
+                R.id.abrirAppConfig ->{
                     Toast.makeText(context, "Abrir configuracion", Toast.LENGTH_SHORT).show()
+                }
 
-                R.id.abrirAyuda -> //Abrir la ayuda de la app
+                //Abrir la ayuda de la app
+                R.id.abrirAyuda -> {
                     Toast.makeText(context, "Abrir ayuda", Toast.LENGTH_SHORT).show()
+                }
 
-                R.id.cerrarSesion -> //Cerrar sesion
+                //Cerrar sesion
+                R.id.cerrarSesion ->{
                     Toast.makeText(context, "Has cerrado sesion", Toast.LENGTH_SHORT).show()
-
+                    FirebaseAuth.getInstance().signOut()
+                    NavHostFragment.findNavController(this).navigate(R.id.action_mainFragment_to_loginFragment)
+                }
             }
             true
         }
 
+        //Desplegar menu de opciones
         val abrirOpcionesButton = root.findViewById<View>(R.id.imageButtonOpenOptionDrawer)
         abrirOpcionesButton.setOnClickListener { //Abrir el drawer layout
             drawerLayout.openDrawer(root.findViewById<View>(R.id.drawer_izq))

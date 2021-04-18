@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navConstraint"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="wrap_content"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Ajustes"
-        android:textSize="48dp"
+        android:textSize="32dp"
         android:background="@drawable/gardient_background"
         android:textColor="@android:color/black"
         android:padding="15dp"
