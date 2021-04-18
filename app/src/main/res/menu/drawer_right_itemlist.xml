@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/abrirPerfilConfig"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Mi perfil" />
+
+    <item android:id="@+id/abrirAppConfig"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Configuracion" />
+
+    <item android:id="@+id/abrirAyuda"
+        android:icon="@drawable/ic_help_black_24dp"
+        android:title="Ayuda" />
+
+    <item android:id="@+id/cerrarSesion"
+        android:icon="@drawable/ic_logout_black_24dp"
+        android:title="Cerrar sesion"
+        />
+
+</menu>
