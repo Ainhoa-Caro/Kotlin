@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h600dp-port-v13\\values-h600dp-port-v13.xml",
+            "outputFile": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h600dp-port-v13\\values-h600dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Javie\\.gradle\\caches\\transforms-2\\files-2.1\\4ff8b1d17e45b1bcee676a35a539ef99\\material-1.3.0\\res\\values-h600dp-port-v13\\values-h600dp-port-v13.xml",
+                    "source": "C:\\Users\\mhl_1\\.gradle\\caches\\transforms-2\\files-2.1\\4ff8b1d17e45b1bcee676a35a539ef99\\material-1.3.0\\res\\values-h600dp-port-v13\\values-h600dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
