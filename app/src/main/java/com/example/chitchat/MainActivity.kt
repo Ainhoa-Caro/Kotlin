@@ -24,8 +24,11 @@ class MainActivity : AppCompatActivity()  {
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6992ad786dd144beb073467540af1aa2b0a61b83
     }
 
 }

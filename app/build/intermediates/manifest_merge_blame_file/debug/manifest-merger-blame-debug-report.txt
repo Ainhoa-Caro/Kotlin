@@ -6,7 +6,11 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
+<<<<<<< HEAD
 8-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml
+=======
+8-->D:\Users\Sergi\Documents\SourceTree\ChitChat\app\src\main\AndroidManifest.xml
+>>>>>>> 6992ad786dd144beb073467540af1aa2b0a61b83
 9        android:targetSdkVersion="30" />
 9-->C:\Users\Javie\OneDrive\Documents\KotlinBueno\app\src\main\AndroidManifest.xml
 10
