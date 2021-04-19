@@ -122,7 +122,7 @@ class MainFragment : Fragment() {
                 R.id.cerrarSesion ->{
                     Toast.makeText(context, "Has cerrado sesion", Toast.LENGTH_SHORT).show()
                     FirebaseAuth.getInstance().signOut()
-                    NavHostFragment.findNavController(this).navigate(R.id.action_mainFragment_to_loginFragment)
+                    NavHostFragment.findNavController(this).popBackStack()
                 }
             }
             true
