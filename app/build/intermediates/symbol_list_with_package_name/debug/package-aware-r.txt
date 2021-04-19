@@ -1814,11 +1814,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-<<<<<<< HEAD
 drawable facebook
-=======
 drawable gardient_background
->>>>>>> 6992ad786dd144beb073467540af1aa2b0a61b83
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_account_circle_black_24dp

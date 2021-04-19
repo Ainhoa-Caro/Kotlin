@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.chitchat.login.LoginFragment"
@@ -18,19 +18,18 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.chitchat.fragments.MainFragment"
+        android:name="com.example.chitchat.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
-<<<<<<< HEAD
+
         <argument
             android:name="correo"
             app:argType="string"
             app:nullable="true" />
-=======
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
->>>>>>> 6992ad786dd144beb073467540af1aa2b0a61b83
+
     </fragment>
     <fragment
         android:id="@+id/registroFragment"
