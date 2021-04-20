@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.chitchat.MainFragment"
+        android:name="com.example.chitchat.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
 
