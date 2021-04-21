@@ -6,118 +6,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/Correo_edittext"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/textviewlogin"
-        android:ems="10"
-        android:hint="@string/Correo"
-        android:inputType="textPersonName"
-        android:paddingLeft="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <TextView
-        android:id="@+id/RecuperarContraseña_textView"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/RecuperarContraseña"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/Registrarse_boton"
-        app:layout_constraintStart_toStartOf="@+id/Login_boton"
-        app:layout_constraintTop_toBottomOf="@+id/Registrarse_boton" />
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondologin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
 
-    <Button
-        android:id="@+id/Registrarse_boton"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/botoneslogin"
-        android:text="@string/Registrarse"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="@+id/Password_edittext"
-        app:layout_constraintStart_toEndOf="@+id/Login_boton"
-        app:layout_constraintTop_toBottomOf="@+id/Password_edittext" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/marco_curva"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
 
-    <Button
-        android:id="@+id/Login_boton"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/botoneslogin"
-        android:text="@string/Login"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toStartOf="@+id/Registrarse_boton"
-        app:layout_constraintStart_toStartOf="@+id/Password_edittext"
-        app:layout_constraintTop_toBottomOf="@+id/Password_edittext" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_interno"
+            app:layout_constraintVertical_bias="0" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/layout_interno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/boton_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="132dp"
+            android:backgroundTint="@color/white"
+            android:elevation="35dp"
+            android:src="@drawable/logogoogle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/boton_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:elevation="35dp"
+            android:src="@drawable/facebook"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/boton_google"
+            app:layout_constraintHorizontal_bias="0.828"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
         app:srcCompat="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/Password_edittext"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/textviewlogin"
-        android:ems="10"
-        android:hint="@string/Contraseña"
-        android:inputType="textPassword"
-        android:paddingLeft="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/Correo_edittext"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/Correo_edittext"
-        app:layout_constraintTop_toBottomOf="@+id/Correo_edittext" />
 
-
-    <Button
-        android:id="@+id/boton_google"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/botongoogle"
-        android:drawableStart="@drawable/logogoogle"
-        android:drawablePadding="@dimen/activity_horizontal_margin"
-        android:paddingStart="@dimen/fab_margin"
-        android:text="Google"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="@+id/Registrarse_boton"
-        app:layout_constraintStart_toStartOf="@+id/Login_boton"
-        app:layout_constraintTop_toBottomOf="@+id/RecuperarContraseña_textView" />
-
-    <Button
-        android:id="@+id/boton_facebook"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/botongoogle"
-        android:drawableStart="@drawable/facebook"
-        android:drawablePadding="@dimen/activity_horizontal_margin"
-        android:paddingStart="@dimen/fab_margin"
-        android:text="FaceBook"
-        android:textAlignment="viewStart"
-        app:layout_constraintEnd_toEndOf="@+id/Registrarse_boton"
-        app:layout_constraintStart_toStartOf="@+id/Login_boton"
-        app:layout_constraintTop_toBottomOf="@+id/boton_google" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Seleccionfoto_imagenView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/insertarfoto"
+        app:civ_border_color="#f57f17"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Nombre_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/UserName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/Correo_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Correo"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre_edittext"
+        app:layout_constraintVertical_bias=".05"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/Passwordone_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:hint="@string/Contraseña"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Correo_edittext"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/Passwordotwo_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:hint="@string/Contraseña"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Passwordone_edittext"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/Login_boton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/botoneslogin"
+        android:text="@string/Registrarse"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Passwordotwo_edittext"
+        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintWidth_percent=".4" />
+
+    <!--<EditText
+        android:id="@+id/Nombre_edittext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/UserName"/>
+
+    <EditText
+        android:id="@+id/Passwordotwo_edittext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/RepiteContraseña"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1249,6 +1249,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1815,6 +1816,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable facebook
+drawable fondologin
 drawable gardient_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1842,6 +1844,7 @@ drawable ic_settings_black_24dp
 drawable insertarfoto
 drawable logo
 drawable logogoogle
+drawable marco_curva
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1903,7 +1906,6 @@ id Password_edittext
 id Passwordone_edittext
 id Passwordotwo_edittext
 id RecuperarContraseña_textView
-id Registrarse_boton
 id Registrarse_boton_Vregistro
 id SHIFT
 id SHOW_ALL
@@ -2045,6 +2047,7 @@ id com_facebook_tooltip_bubble_view_text_body
 id com_facebook_tooltip_bubble_view_top_pointer
 id confirm_button
 id confirmation_code
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -2140,6 +2143,7 @@ id ignoreRequest
 id image
 id imageButtonOpenOptionDrawer
 id imageButtonSearchConversation
+id imageView
 id imageView2
 id imageViewFotoContacto
 id info
@@ -2157,6 +2161,7 @@ id labeled
 id large
 id largeLabel
 id layout
+id layout_interno
 id left
 id leftToRight
 id light
@@ -2394,6 +2399,7 @@ id unlabeled
 id up
 id useLogo
 id view_offset_helper
+id view_pager
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
@@ -2498,6 +2504,7 @@ layout fragment_login
 layout fragment_main
 layout fragment_registro
 layout item_list_conversaciones
+layout login_fragment
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2561,6 +2568,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout registro_fragment
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\layout_registro_fragment.xml.flat",
+        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\layout\\registro_fragment.xml"
+    },
+    {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\layout\\fragment_registro.xml"
     },
@@ -156,8 +160,16 @@
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\layout_login_fragment.xml.flat",
+        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\layout\\login_fragment.xml"
+    },
+    {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_marco_curva.xml.flat",
+        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\marco_curva.xml"
     },
     {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash.xml.flat",
@@ -182,6 +194,10 @@
     {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_camera.xml.flat",
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fondologin.jpg.flat",
+        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\fondologin.jpg"
     },
     {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botongoogle.xml.flat",

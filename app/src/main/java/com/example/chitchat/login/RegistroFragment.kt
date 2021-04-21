@@ -35,18 +35,18 @@ class RegistroFragment : Fragment() {
     private var database: DatabaseReference = Firebase.database.reference
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val root = inflater.inflate(R.layout.fragment_registro, container, false)
+        val root = inflater.inflate(R.layout.registro_fragment, container, false)
         nombreusuario = root.findViewById<EditText>(R.id.Nombre_edittext)
 
         email = root.findViewById<EditText>(R.id.Correo_edittext)
         passwordone = root.findViewById<EditText>(R.id.Passwordone_edittext)
         passwordtwo = root.findViewById<EditText>(R.id.Passwordotwo_edittext)
-        val btvolver=root.findViewById<View>(R.id.Volver_boton)
+        //val btvolver=root.findViewById<View>(R.id.Volver_boton)
         val btregistrarse=root.findViewById<View>(R.id.Registrarse_boton_Vregistro)
         imgfoto=root.findViewById<ImageView>(R.id.Seleccionfoto_imagenView)
 
         //Boton para volver a la pantalla de login
-        btvolver.setOnClickListener {
+        /*btvolver.setOnClickListener {
             NavHostFragment.findNavController(this).popBackStack()
         }
 
@@ -54,7 +54,7 @@ class RegistroFragment : Fragment() {
         btregistrarse.setOnClickListener {
             comprobarcampos(nombreusuario, email, passwordone, passwordtwo, imageUri)
 
-        }
+        }*/
         //Sirve para cambiar la foto, se ha añadido un evento OnClick al ImagenView
         imgfoto.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)

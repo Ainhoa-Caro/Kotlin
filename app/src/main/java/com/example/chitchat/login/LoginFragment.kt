@@ -1,6 +1,7 @@
 package com.example.chitchat.login
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -16,6 +17,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
+import androidx.viewpager.widget.ViewPager
 import com.example.chitchat.R
 import com.example.chitchat.pojos.User
 import com.facebook.CallbackManager
@@ -26,6 +28,8 @@ import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
@@ -38,9 +42,18 @@ import kotlinx.android.synthetic.main.fragment_login.*
 
 
 
-class LoginFragment : Fragment() {
-    private lateinit var btgoogle: Button
-    private lateinit var btfacebook: Button
+class LoginFragment : Fragment()  {
+
+
+    private lateinit var tabLayout : TabLayout
+    private lateinit var viewPackage: ViewPager
+
+    private lateinit var btgoogle: FloatingActionButton
+    private lateinit var btfacebook: FloatingActionButton
+
+    private var v= 0
+
+
     private lateinit var btlogin: Button
     private lateinit var btregistro: Button
     private lateinit var tvrecuperar: TextView
@@ -51,11 +64,33 @@ class LoginFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val root = inflater.inflate(R.layout.fragment_login, container, false)
-        btgoogle = root.findViewById<Button>(R.id.boton_google)
-        btfacebook = root.findViewById<Button>(R.id.boton_facebook)
-        btlogin = root.findViewById<Button>(R.id.Login_boton)
-        btregistro = root.findViewById<Button>(R.id.Registrarse_boton)
-        tvrecuperar = root.findViewById<TextView>(R.id.RecuperarContraseña_textView)
+        tabLayout = root.findViewById<TabLayout>(R.id.layout_interno)
+        viewPackage = root.findViewById<ViewPager>(R.id.view_pager)
+
+        btgoogle = root.findViewById<FloatingActionButton>(R.id.boton_google)
+        btfacebook = root.findViewById<FloatingActionButton>(R.id.boton_facebook)
+        //btlogin = root.findViewById<Button>(R.id.Login_boton)
+        //btregistro = root.findViewById<Button>(R.id.Registrarse_boton)
+        //tvrecuperar = root.findViewById<TextView>(R.id.RecuperarContraseña_textView)
+
+
+        //Ojo
+        tabLayout.tabGravity = TabLayout.GRAVITY_FILL
+
+        val adapter = getActivity()?.let { LoginAdapter(it.getSupportFragmentManager(),this.requireContext(),tabLayout.getTabCount()) }
+        viewPackage.setAdapter(adapter)
+        tabLayout.setupWithViewPager(viewPackage)
+
+
+        btfacebook.setTranslationY(10F)
+        btgoogle.setTranslationY(10F)
+        tabLayout.setTranslationY(10F)
+        btfacebook.setAlpha(v.toFloat())
+        btgoogle.setAlpha(v.toFloat())
+        tabLayout.setAlpha(v.toFloat())
+        btfacebook.animate().translationY(0F).alpha(1F).setDuration(1000).setStartDelay(400).start()
+        btgoogle.animate().translationY(0F).alpha(1F).setDuration(1000).setStartDelay(600).start()
+
         setup(root)
         sesion(root)
         return root
@@ -119,7 +154,7 @@ class LoginFragment : Fragment() {
                     })
         }
         //Boton que incia  sesion con usuario y contraseña
-        btlogin.setOnClickListener {
+        /*btlogin.setOnClickListener {
             if (Correo_edittext.text.toString().isEmpty() || Password_edittext.text.toString()
                             .isEmpty()
             ) {
@@ -146,7 +181,7 @@ class LoginFragment : Fragment() {
         tvrecuperar.setOnClickListener {
             Log.d("MainActivity", "Recuperar")
 
-        }
+        }*/
     }
 //Permite tener una sesion iniciada
    private fun sesion(root: View) {
