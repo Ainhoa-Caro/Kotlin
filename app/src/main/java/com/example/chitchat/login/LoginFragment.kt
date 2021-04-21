@@ -153,7 +153,7 @@ class LoginFragment : Fragment() {
         val sharedPref = activity?.getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
         val email = sharedPref?.getString("correo", null)
         if (email != null) {
-            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(email)
+            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(null)
             NavHostFragment.findNavController(this).navigate(action)
 
         }
