@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.chitchat.R
 import com.example.chitchat.adapters.MessageAdapter
 import com.example.chitchat.pojos.Mensaje
@@ -14,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.GenericTypeIndicator
-import com.google.firebase.database.Query
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_chat_one_to_one.*
@@ -24,7 +26,9 @@ class ChatOneToOneFragment : Fragment() {
     //Variables:
     private lateinit var chatId: String
     private lateinit var userLogueadoId: String
-
+    private lateinit var msjTextField: EditText
+    private lateinit var enviarMsjButton: Button
+    private lateinit var msjRecylerView: RecyclerView
     //Variables de enlace con base de datos
     private val auth: FirebaseAuth = Firebase.auth
     private val database : DatabaseReference = Firebase.database.reference
@@ -45,9 +49,22 @@ class ChatOneToOneFragment : Fragment() {
         userLogueadoId = auth.currentUser.getUid()
 
         //Enlazamos Fragment con su Layout
-        return inflater.inflate(R.layout.fragment_chat_one_to_one, container, false)
+        val root = inflater.inflate(R.layout.fragment_chat_one_to_one, container, false)
 
-    initViews()
+
+
+
+        //Declaración y acciones del botón Enviar
+        enviarMsjButton = root.findViewById<Button>(R.id.enviarMsjButton)
+        //Texto a enviar:
+        msjTextField = root.findViewById<EditText>(R.id.msjTextField);
+
+        msjRecylerView = root.findViewById<RecyclerView>(R.id.msjRecylerView)
+
+        initViews()
+
+        return root
+
     }
 
     //Configuración de RecyclerView con su MensajeAdapter
@@ -56,44 +73,31 @@ class ChatOneToOneFragment : Fragment() {
         msjRecylerView.adapter = MessageAdapter(userLogueadoId)
 
         //Cuando pulsemos el botón enviar vamos a "enviarMensaje"
-        enviarMsjButton.setOnClickListener { sendMessage() }
+        enviarMsjButton.setOnClickListener { enviarMensaje() }
 
-
-
-
-        database.child("chats").child(chatId).child("mensajes").orderByChild("fecha")
+        database.child("chatsOneToOne").child(chatId).child("mensajes")
             .get()
-            .addOnSuccessListener { messages ->
-                val listaMensajes: List<Mensaje>? = messages.getValue(object : GenericTypeIndicator<List<Mensaje>>(){})
+            .addOnSuccessListener { mensaje ->
+                val listaMensajes: List<Mensaje>? = mensaje.getValue(object : GenericTypeIndicator<List<Mensaje>>(){})
                 if (listaMensajes != null) {
                         (msjRecylerView.adapter as MessageAdapter).setData(listaMensajes)
                 }
             }
 
-        database.child("chats").child(chatId).child("mensajes").orderByChild("fecha")
-            .addSnapshotListener { messages, error ->
-                if(error == null){
-                    messages?.let {
-                        val listMessages = it.toObjects(Mensaje::class.java)
-                        (msjRecylerView.adapter as MessageAdapter).setData(listMessages)
-                    }
-                }
-            }
+        //FALTAAAAA
     }
 
-    private fun sendMessage(){
-        val message = Mensaje(
+    private fun enviarMensaje(){
+        val mensaje = Mensaje(
                 message = msjTextField.text.toString(),
                 from = userLogueadoId
 
                 //Meter un comprobador isEmpty???
-
         )
-
-        db.collection("chats").document(chatId).collection("messages").document().set(message)
+        var mensajeId = UUID.randomUUID().toString()
+        database.child("chatsOneToOne").child(chatId).child("mensajes").child(mensajeId).setValue(mensaje)
 
         msjTextField.setText("")
-
 
     }
 

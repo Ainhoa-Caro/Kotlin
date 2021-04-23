@@ -20,36 +20,36 @@
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_extmensaje_textview.xml.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\extmensaje_textview.xml"
     },
     {
-        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
-        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\fragment_registro.xml"
-    },
-    {
-        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\fragment_registro.xml"
+    },
+    {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_gallery.xml.flat",
-        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
-    },
-    {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_mensaje.xml.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\item_mensaje.xml"
+    },
+    {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
     },
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
@@ -144,11 +144,11 @@
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\botongoogle.xml"
     },
     {
-        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_textviewlogin.xml.flat",
-        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\textviewlogin.xml"
-    },
-    {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_conversacion.xml.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\item_conversacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_textviewlogin.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\textviewlogin.xml"
     }
 ]

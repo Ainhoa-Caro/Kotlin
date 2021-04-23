@@ -10,25 +10,25 @@ import kotlinx.android.synthetic.main.item_mensaje.view.*
 
 class MessageAdapter(private val user: String): RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() {
 
-    private var messages: List<Mensaje> = emptyList()
+    private var mensajes: List<Mensaje> = emptyList()
 
     fun setData(list: List<Mensaje>){
-        messages = list
+        mensajes = list
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessageViewHolder {
         return MessageViewHolder(
-                LayoutInflater.from(parent.context).inflate(
-                        R.layout.item_mensaje,
-                        parent,
-                        false
-                )
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.item_mensaje,
+                parent,
+                false
+            )
         )
     }
 
     override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
-        val message = messages[position]
+        val message = mensajes[position]
 
         if(user == message.from){
             holder.itemView.miMensajeLayout.visibility = View.VISIBLE
@@ -45,7 +45,7 @@ class MessageAdapter(private val user: String): RecyclerView.Adapter<MessageAdap
     }
 
     override fun getItemCount(): Int {
-        return messages.size
+        return mensajes.size
     }
 
     class MessageViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
