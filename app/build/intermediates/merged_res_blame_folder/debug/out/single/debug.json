@@ -24,16 +24,20 @@
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_extmensaje_textview.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\extmensaje_textview.xml"
+    },
+    {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\fragment_registro.xml"
     },
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
-        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\fragment_registro.xml"
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -42,6 +46,10 @@
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_gallery.xml.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_mensaje.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\item_mensaje.xml"
     },
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
@@ -58,6 +66,10 @@
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mimensaje_textview.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\mimensaje_textview.xml"
     },
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -96,6 +108,10 @@
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_chat_one_to_one.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\fragment_chat_one_to_one.xml"
+    },
+    {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_camera.xml.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
     },
@@ -130,5 +146,9 @@
     {
         "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_textviewlogin.xml.flat",
         "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\drawable\\textviewlogin.xml"
+    },
+    {
+        "merged": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_conversacion.xml.flat",
+        "source": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\src\\main\\res\\layout\\item_conversacion.xml"
     }
 ]

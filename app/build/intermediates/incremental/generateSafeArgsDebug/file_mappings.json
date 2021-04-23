@@ -1,1 +1,1 @@
-[{"navFile":"src\\main\\res\\navigation\\mobile_navigation.xml","javaFiles":["com.example.chitchat.login.LoginFragmentDirections","com.example.chitchat.MainFragmentArgs"]}]
+[{"navFile":"src\\main\\res\\navigation\\mobile_navigation.xml","javaFiles":["com.example.chitchat.login.LoginFragmentDirections","com.example.chitchat.MainFragmentDirections","com.example.chitchat.MainFragmentArgs","com.example.chitchat.converOneToOne.ChatOneToOneFragmentArgs"]}]

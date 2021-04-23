@@ -25,10 +25,23 @@
             android:name="correo"
             app:argType="string"
             app:nullable="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_chatOneToOneFragment"
+            app:destination="@id/chatOneToOneFragment" />
     </fragment>
     <fragment
         android:id="@+id/registroFragment"
         android:name="com.example.chitchat.login.RegistroFragment"
         android:label="fragment_registro"
         tools:layout="@layout/fragment_registro" />
+    <fragment
+        android:id="@+id/chatOneToOneFragment"
+        android:name="com.example.chitchat.converOneToOne.ChatOneToOneFragment"
+        android:label="fragment_chat_one_to_one"
+        tools:layout="@layout/fragment_chat_one_to_one" >
+        <argument
+            android:name="idChat"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 </navigation>
