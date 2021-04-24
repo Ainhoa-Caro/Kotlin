@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chitchat.R
 import com.example.chitchat.pojos.Mensaje
+import com.google.firebase.database.DataSnapshot
 import kotlinx.android.synthetic.main.item_mensaje.view.*
 
 class MessageAdapter(private val user: String): RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() {

@@ -1,13 +1,13 @@
 package com.example.chitchat.converOneToOne
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chitchat.R
@@ -15,12 +15,12 @@ import com.example.chitchat.adapters.MessageAdapter
 import com.example.chitchat.pojos.Mensaje
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.GenericTypeIndicator
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.fragment_chat_one_to_one.*
 import java.util.*
+
 
 class ChatOneToOneFragment : Fragment() {
     //Variables:
@@ -51,9 +51,6 @@ class ChatOneToOneFragment : Fragment() {
         //Enlazamos Fragment con su Layout
         val root = inflater.inflate(R.layout.fragment_chat_one_to_one, container, false)
 
-
-
-
         //Declaración y acciones del botón Enviar
         enviarMsjButton = root.findViewById<Button>(R.id.enviarMsjButton)
         //Texto a enviar:
@@ -68,26 +65,31 @@ class ChatOneToOneFragment : Fragment() {
     }
 
     //Configuración de RecyclerView con su MensajeAdapter
-    private fun initViews(){
+    private fun initViews() {
         msjRecylerView.layoutManager = LinearLayoutManager(context)
         msjRecylerView.adapter = MessageAdapter(userLogueadoId)
+
 
         //Cuando pulsemos el botón enviar vamos a "enviarMensaje"
         enviarMsjButton.setOnClickListener { enviarMensaje() }
 
-        database.child("chatsOneToOne").child(chatId).child("mensajes")
-            .get()
-            .addOnSuccessListener { mensaje ->
-                val listaMensajes: List<Mensaje>? = mensaje.getValue(object : GenericTypeIndicator<List<Mensaje>>(){})
-                if (listaMensajes != null) {
-                        (msjRecylerView.adapter as MessageAdapter).setData(listaMensajes)
-                }
-            }
 
-        //FALTAAAAA
+        database.child("chatsOneToOne").child(chatId).child("mensajes")
+                .get()
+                .addOnSuccessListener { mensajes ->
+                    val listaMensajes = mensajes.children
+
+                        if (listaMensajes != null) {
+                            Toast.makeText(context, "ListMensajes tiene algo", Toast.LENGTH_LONG).show()
+                            // (msjRecylerView.adapter as MessageAdapter).setData(listaMensajes)
+                        }
+
+                    //FALTAAAAA
+                }
+
     }
 
-    private fun enviarMensaje(){
+    private fun enviarMensaje() {
         val mensaje = Mensaje(
                 message = msjTextField.text.toString(),
                 from = userLogueadoId
@@ -98,9 +100,7 @@ class ChatOneToOneFragment : Fragment() {
         database.child("chatsOneToOne").child(chatId).child("mensajes").child(mensajeId).setValue(mensaje)
 
         msjTextField.setText("")
-
+        Toast.makeText(context, "llegamos3", Toast.LENGTH_LONG).show()
     }
-
-
 
 }
