@@ -1820,6 +1820,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_account_circle_black_24dp
 drawable ic_add_black_24dp
+drawable ic_arrow_back_ios_new_black_24dp
 drawable ic_chat_black_24dp
 drawable ic_clock_black_24dp
 drawable ic_group_black_24dp
@@ -1966,6 +1967,7 @@ id action_image
 id action_loginFragment_to_mainFragment
 id action_loginFragment_to_registroFragment
 id action_mainFragment_to_loginFragment
+id action_mainFragment_to_seleccionContactoFragment
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -2012,7 +2014,8 @@ id buttonPanel
 id cache_measures
 id cancel_action
 id cancel_button
-id cardViewConversacion
+id cardViewContacto
+id cardViewConversaciones
 id center
 id center_horizontal
 id center_vertical
@@ -2084,12 +2087,13 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
-id drawer_izq
+id drawer_der
 id drawer_layout
 id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editTextBusquedaContacto
 id edit_query
 id elastic
 id end
@@ -2139,9 +2143,11 @@ id ignore
 id ignoreRequest
 id image
 id imageButtonOpenOptionDrawer
+id imageButtonReturnSeleccionContactos
 id imageButtonSearchConversation
 id imageView2
-id imageViewFotoContacto
+id imageViewFotoContacto_Contacto
+id imageViewFotoContacto_Conversaciones
 id info
 id inline
 id inspection_slot_table_set
@@ -2266,6 +2272,7 @@ id progress_title
 id radio
 id ratio
 id rectangles
+id recyclerViewListaContactos
 id registroFragment
 id reverseSawtooth
 id right
@@ -2294,6 +2301,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seleccionContactoFragment
 id select_dialog_listview
 id selected
 id selection_type
@@ -2357,10 +2365,12 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewBiografiaContacto
 id textViewFechaUltMensaje
 id textViewMensajesNoLeidos
 id textViewResumenMensaje
-id textView_NombreContacto
+id textView_NombreContacto_Conversaciones
+id textView_NombreContacto_ListaContactos
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2497,6 +2507,8 @@ layout dynamic_feature_install_fragment
 layout fragment_login
 layout fragment_main
 layout fragment_registro
+layout fragment_seleccion_contacto
+layout item_list_contactos
 layout item_list_conversaciones
 layout material_chip_input_combo
 layout material_clock_display

@@ -75,7 +75,7 @@ class MainFragment : Fragment() {
 
         fab_nuevoChat.setOnClickListener{
             Toast.makeText(context, "Crear nuevo chat 1 a 1", Toast.LENGTH_SHORT).show()
-            //Navegar a la ventana de contactos para crear el chat
+            NavHostFragment.findNavController(this).navigate(R.id.action_mainFragment_to_seleccionContactoFragment)
         }
 
         fab_nuevoGrupo.setOnClickListener{

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.chitchat.R
 
 //Coger de la BD una lista con los datos de las conversaciones
-class ConversationsAdapter (private val imagesList: List<Uri>): RecyclerView.Adapter<ConversationsAdapter.ConversationsHolder>(){
+class ConversationsAdapter (private val conversationList: List<Uri>): RecyclerView.Adapter<ConversationsAdapter.ConversationsHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ConversationsHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return ConversationsHolder(
@@ -24,10 +24,11 @@ class ConversationsAdapter (private val imagesList: List<Uri>): RecyclerView.Ada
 
     //Bind holder actions
     override fun onBindViewHolder(holder: ConversationsHolder, position: Int) {
+        /*
         holder.cardView.setOnClickListener {
         //Llevar a la ventana de la conevrsacion (para escribir y leer)
         }
-        /*
+
         holder.imageView.setImageURI(imagesList[position])
         //Poner imagen del contacto
 
@@ -42,10 +43,11 @@ class ConversationsAdapter (private val imagesList: List<Uri>): RecyclerView.Ada
 
     //Get list size
     override fun getItemCount(): Int {
-        return imagesList.size
+        return conversationList.size
     }
 
     class ConversationsHolder(view: View):RecyclerView.ViewHolder(view){
+        /*
         val cardView = view.findViewById<View>(R.id.cardViewConversacion)
         val imageViewContacto: ImageView = view.findViewById(R.id.imageViewFotoContacto)
         val nombreContacto = view.findViewById<View>(R.id.textView_NombreContacto) as TextView
@@ -53,5 +55,7 @@ class ConversationsAdapter (private val imagesList: List<Uri>): RecyclerView.Ada
         val fechaUltMensaje = view.findViewById<View>(R.id.textViewFechaUltMensaje)  as TextView
         val numMensajesNoLeidos = view.findViewById<View>(R.id.textViewMensajesNoLeidos) as TextView
 
+
+         */
     }
 }

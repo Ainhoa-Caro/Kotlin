@@ -29,6 +29,9 @@
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_seleccionContactoFragment"
+            app:destination="@id/seleccionContactoFragment" />
 
     </fragment>
     <fragment
@@ -36,4 +39,9 @@
         android:name="com.example.chitchat.login.RegistroFragment"
         android:label="fragment_registro"
         tools:layout="@layout/fragment_registro" />
+    <fragment
+        android:id="@+id/seleccionContactoFragment"
+        android:name="com.example.chitchat.fragments.SeleccionContactoFragment"
+        android:label="fragment_seleccion_contacto"
+        tools:layout="@layout/fragment_seleccion_contacto" />
 </navigation>
