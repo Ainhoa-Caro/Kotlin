@@ -95,7 +95,7 @@ class MainFragment : Fragment() {
         drawerLayout.addDrawerListener(toggle)
 
         //Onclick de las opciones del menu desplegable
-        val navIzq: NavigationView = root.findViewById(R.id.drawer_izq)
+        val navIzq: NavigationView = root.findViewById(R.id.drawer_der)
         navIzq.setNavigationItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
                 //Abrir config del perfil
@@ -126,7 +126,7 @@ class MainFragment : Fragment() {
         //Desplegar menu de opciones
         val abrirOpcionesButton = root.findViewById<View>(R.id.imageButtonOpenOptionDrawer)
         abrirOpcionesButton.setOnClickListener { //Abrir el drawer layout
-            drawerLayout.openDrawer(root.findViewById<View>(R.id.drawer_izq))
+            drawerLayout.openDrawer(root.findViewById<View>(R.id.drawer_der))
         }
 
 
