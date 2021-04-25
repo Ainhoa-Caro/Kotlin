@@ -1,6 +1,7 @@
 package com.example.chitchat.converOneToOne
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,12 +12,11 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chitchat.R
-import com.example.chitchat.adapters.MessageAdapter
+import com.example.chitchat.adapters.MensajeAdapter
 import com.example.chitchat.pojos.Mensaje
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import java.util.*
@@ -64,43 +64,56 @@ class ChatOneToOneFragment : Fragment() {
 
     }
 
-    //Configuración de RecyclerView con su MensajeAdapter
+
     private fun initViews() {
+        //Configuración de RecyclerView con su MensajeAdapter
         msjRecylerView.layoutManager = LinearLayoutManager(context)
-        msjRecylerView.adapter = MessageAdapter(userLogueadoId)
+        msjRecylerView.adapter = MensajeAdapter(userLogueadoId)
 
 
         //Cuando pulsemos el botón enviar vamos a "enviarMensaje"
         enviarMsjButton.setOnClickListener { enviarMensaje() }
 
+       val ref = FirebaseDatabase.getInstance().getReference("/chatsOneToOne/"+chatId+"/mensajes").orderByChild("fecha/time")
 
-        database.child("chatsOneToOne").child(chatId).child("mensajes")
-                .get()
-                .addOnSuccessListener { mensajes ->
-                    val listaMensajes = mensajes.children
+        ref.addValueEventListener(object: ValueEventListener {
 
-                        if (listaMensajes != null) {
-                            Toast.makeText(context, "ListMensajes tiene algo", Toast.LENGTH_LONG).show()
-                            // (msjRecylerView.adapter as MessageAdapter).setData(listaMensajes)
-                        }
+            override fun onDataChange(snapshot: DataSnapshot) {
+                var mensajeList: MutableList<Mensaje> = mutableListOf()
+                snapshot.children.forEach {
+                    var mensaje = it.getValue(Mensaje::class.java)!!
 
-                    //FALTAAAAA
+                    if (mensaje != null) {
+                        mensajeList?.add(mensaje)
+                    }
+                    if (mensajeList != null) {
+                        (msjRecylerView.adapter as MensajeAdapter).setData(mensajeList)
+                    }
                 }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.d(":::mensaj", "Error ennnnn onCancelled !!!!!!!!!!!!")
+            }
+        })
+
+
+
 
     }
 
-    private fun enviarMensaje() {
-        val mensaje = Mensaje(
-                message = msjTextField.text.toString(),
-                from = userLogueadoId
+            private fun enviarMensaje() {
+            val mensaje = Mensaje(
+                    message = msjTextField.text.toString(),
+                    from = userLogueadoId
 
-                //Meter un comprobador isEmpty???
-        )
-        var mensajeId = UUID.randomUUID().toString()
-        database.child("chatsOneToOne").child(chatId).child("mensajes").child(mensajeId).setValue(mensaje)
+                    //Meter un comprobador isEmpty???
+            )
+            var mensajeId = UUID.randomUUID().toString()
+            database.child("chatsOneToOne").child(chatId).child("mensajes").child(mensajeId).setValue(mensaje)
 
-        msjTextField.setText("")
-        Toast.makeText(context, "llegamos3", Toast.LENGTH_LONG).show()
-    }
+            msjTextField.setText("")
+        }
+
 
 }
