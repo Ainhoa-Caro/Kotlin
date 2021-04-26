@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@drawable/gardient_background_gris"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondologin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".27"
@@ -54,12 +54,36 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0" />
 
+        <TextView
+            android:id="@+id/textologin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="@color/white"
+            android:hint="Login"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/view_pager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/layout_interno" />
+
+        <TextView
+            android:id="@+id/textoregistro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="@color/white"
+            android:hint="Registro"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/view_pager"
+            app:layout_constraintEnd_toEndOf="@+id/layout_interno"
+            app:layout_constraintTop_toTopOf="@+id/layout_interno" />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/boton_google"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="132dp"
             android:backgroundTint="@color/white"
+            android:layout_marginRight="80dp"
             android:elevation="35dp"
             android:src="@drawable/logogoogle"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -71,13 +95,11 @@
             android:id="@+id/boton_facebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:backgroundTint="@color/white"
+            android:layout_marginLeft="80dp"
             android:elevation="35dp"
             android:src="@drawable/facebook"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/boton_google"
-            app:layout_constraintHorizontal_bias="0.828"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view_pager"
             app:layout_constraintVertical_bias="0.5" />

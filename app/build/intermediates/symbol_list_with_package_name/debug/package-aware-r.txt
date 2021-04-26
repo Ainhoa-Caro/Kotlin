@@ -1232,6 +1232,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color primergris
 color radiobutton_themeable_attribute_color
 color ripple_material_dark
 color ripple_material_light
@@ -1239,6 +1240,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color segundogris
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1818,6 +1820,7 @@ drawable design_snackbar_background
 drawable facebook
 drawable fondologin
 drawable gardient_background
+drawable gardient_background_gris
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_account_circle_black_24dp
@@ -2375,6 +2378,8 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textologin
+id textoregistro
 id time
 id title
 id titleDividerNoCustom

@@ -20,12 +20,16 @@
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\layout\\fragment_registro.xml"
     },
     {
+        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botoneslogin.xml.flat",
+        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\botoneslogin.xml"
+    },
+    {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
         "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botoneslogin.xml.flat",
-        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable\\botoneslogin.xml"
+        "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_gardient_background_gris.xml.flat",
+        "source": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\src\\main\\res\\drawable-v24\\gardient_background_gris.xml"
     },
     {
         "merged": "C:\\Users\\Javie\\OneDrive\\Documents\\KotlinBueno\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
