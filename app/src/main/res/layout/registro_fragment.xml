@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Correo_edittext"
-
+        android:inputType="textPassword"
         app:layout_constraintVertical_bias="0.034"
         app:layout_constraintWidth_percent=".8" />
 
@@ -80,6 +80,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@+id/Passwordone_edittext"
 
         app:layout_constraintVertical_bias="0.096"

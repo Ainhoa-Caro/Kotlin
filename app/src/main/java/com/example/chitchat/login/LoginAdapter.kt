@@ -23,7 +23,7 @@ class LoginAdapter(fm : FragmentManager,context:Context,totalTabs : Int): Fragme
                return loginTabFragment
            }
            1 -> {
-               val registroTabFragment = RegistroFragment()
+               val registroTabFragment = RegistroTabFragment()
                return registroTabFragment
            }
            else -> return null!!

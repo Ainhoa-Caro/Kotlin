@@ -54,11 +54,10 @@ class RegistroTabFragment: Fragment() {
         imgfoto.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
             intent.type = "image/*"
-            Toast.makeText(context, "Funciona", Toast.LENGTH_SHORT).show()
             startActivityForResult(intent, 0)
         }
     }
-    private fun comprobarcampos(nombreusuario: EditText, email: EditText, passwordone: EditText, passwordtwo: EditText, imageUri: Uri?) {
+    private fun comprobarcampos(nombreusuario: EditText, email: EditText, passwordone: EditText, passwordtwo: EditText, foto: Uri?) {
         var nickglobal: String? = null
         var informacion: String? = null
         var telefono: Int? = null
@@ -86,6 +85,10 @@ class RegistroTabFragment: Fragment() {
                     .addOnCompleteListener(it) { task ->
                         if (task.isSuccessful) {
                             Toast.makeText(context, "Cuenta creada", Toast.LENGTH_SHORT).show()
+                            nombreusuario.setText("")
+                            email.setText("")
+                            passwordone.setText("")
+                            passwordtwo.setText("")
                             val usuarios = HashMap<String, String?>()
                             usuarios["Nombre usuario"] = usuario.nombreusuario
                             usuarios["Email"] = usuario.email
@@ -109,8 +112,13 @@ class RegistroTabFragment: Fragment() {
     //Esta funcion, es llamada al pulsar en el boton Seleccionfoto_imagenView. Linea 41
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        imageUri = data!!.data!!
-        imgfoto.setImageURI(imageUri)
+        if(data!=null){
+            imageUri = data!!.data!!
+            imgfoto.setImageURI(imageUri)
+        }
+
+
+
     }
     private fun Alerta(){
         val builder = context?.let { AlertDialog.Builder(it) }

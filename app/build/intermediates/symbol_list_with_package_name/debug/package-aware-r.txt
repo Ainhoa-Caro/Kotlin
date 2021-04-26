@@ -1910,7 +1910,6 @@ id Passwordone_edittext
 id Passwordotwo_edittext
 id RecuperarContraseña_textView
 id Registrarse_boton
-id Registrarse_boton_Vregistro
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -1919,7 +1918,6 @@ id SYM
 id Seleccionfoto_imagenView
 id TOP_END
 id TOP_START
-id Volver_boton
 id abrirAppConfig
 id abrirAyuda
 id abrirPerfilConfig
@@ -2508,7 +2506,6 @@ layout drawer_right_header
 layout dynamic_feature_install_fragment
 layout fragment_login
 layout fragment_main
-layout fragment_registro
 layout item_list_conversaciones
 layout login_fragment
 layout material_chip_input_combo
