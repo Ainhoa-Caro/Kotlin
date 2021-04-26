@@ -10,12 +10,12 @@
         android:id="@+id/Seleccionfoto_imagenView"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/insertarfoto"
         android:paddingTop="20dp"
+        android:src="@drawable/insertarfoto"
         app:civ_border_color="#f57f17"
         app:civ_border_width="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,7 +86,7 @@
         app:layout_constraintWidth_percent=".8" />
 
     <Button
-        android:id="@+id/Login_boton"
+        android:id="@+id/Registrarse_boton"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:background="@drawable/botoneslogin"

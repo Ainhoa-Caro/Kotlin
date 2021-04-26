@@ -44,16 +44,11 @@ import kotlinx.android.synthetic.main.fragment_login.*
 
 class LoginFragment : Fragment()  {
 
-
     private lateinit var tabLayout : TabLayout
     private lateinit var viewPackage: ViewPager
     private lateinit var btgoogle: FloatingActionButton
     private lateinit var btfacebook: FloatingActionButton
-
     private var v= 0
-
-    private lateinit var btregistro: Button
-    private lateinit var tvrecuperar: TextView
     private val GOOGLE_SIGN_IN = 100
     private var auth: FirebaseAuth = Firebase.auth
     private var database: DatabaseReference = Firebase.database.reference
@@ -63,33 +58,23 @@ class LoginFragment : Fragment()  {
         val root = inflater.inflate(R.layout.fragment_login, container, false)
         tabLayout = root.findViewById<TabLayout>(R.id.layout_interno)
         viewPackage = root.findViewById<ViewPager>(R.id.view_pager)
-
         btgoogle = root.findViewById<FloatingActionButton>(R.id.boton_google)
         btfacebook = root.findViewById<FloatingActionButton>(R.id.boton_facebook)
 
-        //btregistro = root.findViewById<Button>(R.id.Registrarse_boton)
-        //tvrecuperar = root.findViewById<TextView>(R.id.RecuperarContraseña_textView)
-
-
-        //Ojo
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
-
         val adapter = getActivity()?.let { LoginAdapter(it.getSupportFragmentManager(),this.requireContext(),tabLayout.getTabCount()) }
 
         viewPackage.setAdapter(adapter)
-
         tabLayout.setupWithViewPager(viewPackage)
-
-
         btfacebook.setTranslationY(10F)
         btgoogle.setTranslationY(10F)
-
+        tabLayout.setTranslationY(10F)
         btfacebook.setAlpha(v.toFloat())
         btgoogle.setAlpha(v.toFloat())
         tabLayout.setAlpha(v.toFloat())
         btfacebook.animate().translationY(0F).alpha(1F).setDuration(1000).setStartDelay(900).start()
         btgoogle.animate().translationY(0F).alpha(1F).setDuration(1000).setStartDelay(900).start()
-
+        tabLayout.animate().translationY(0F).alpha(1F).setDuration(1000).setStartDelay(900).start()
 
         setup(root)
         sesion(root)
@@ -154,22 +139,14 @@ class LoginFragment : Fragment()  {
                     })
         }
 
-        /*//Boton que manda al fragment de registro
-        btregistro.setOnClickListener {
-            NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_registroFragment)
-        }
-        //Boton que te mante un correo con tu contraseña
-        tvrecuperar.setOnClickListener {
-            Log.d("MainActivity", "Recuperar")
 
-        }
-    }*/
+    }
 //Permite tener una sesion iniciada
    private fun sesion(root: View) {
         val sharedPref = activity?.getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
         val email = sharedPref?.getString("correo", null)
         if (email != null) {
-            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(null)
+            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(email)
             NavHostFragment.findNavController(this).navigate(action)
 
         }
@@ -220,7 +197,6 @@ class LoginFragment : Fragment()  {
                 Alerta()
             }
         }
-
     }
     //Funcion para registrar usuarios mediante FB y Google
     public fun registrarUser(usuario: User) {
@@ -240,9 +216,5 @@ class LoginFragment : Fragment()  {
 
                         }
 
-
     }
-
-
-
 }

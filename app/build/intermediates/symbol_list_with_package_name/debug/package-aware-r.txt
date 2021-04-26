@@ -1909,6 +1909,7 @@ id Password_edittext
 id Passwordone_edittext
 id Passwordotwo_edittext
 id RecuperarContraseña_textView
+id Registrarse_boton
 id Registrarse_boton_Vregistro
 id SHIFT
 id SHOW_ALL
