@@ -11,7 +11,8 @@ data class User (
         var password: String?,
         var foto: Uri?,
         var informacion: String?,
-        var telefono: Int?)
+        var telefono: Int?
+        )
 {
     //Contructor vacio
   constructor():this ("","","","",null,"",0)

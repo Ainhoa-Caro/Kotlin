@@ -29,7 +29,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:shapeAppearance="@style/circleImageView"
-                tools:srcCompat="@tools:sample/avatars" />
+                app:srcCompat="@drawable/ic_account_circle_black_24dp" />
 
             <TextView
                 android:id="@+id/textView_NombreContacto_ListaContactos"
