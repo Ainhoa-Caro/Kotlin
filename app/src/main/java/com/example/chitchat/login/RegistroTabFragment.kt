@@ -90,13 +90,13 @@ class RegistroTabFragment: Fragment() {
                             passwordone.setText("")
                             passwordtwo.setText("")
                             val usuarios = HashMap<String, String?>()
-                            usuarios["Nombre usuario"] = usuario.nombreusuario
-                            usuarios["Email"] = usuario.email
-                            usuarios["Nick Global"] = usuario.nickglobal.toString()
-                            usuarios["Password"] = usuario.password
-                            usuarios["Foto"] = usuario.foto.toString()
-                            usuarios["Informacion"] = usuario.informacion.toString()
-                            usuarios["Telefono"] = usuario.telefono.toString()
+                            usuarios["nombreusuario"] = usuario.nombreusuario
+                            usuarios["email"] = usuario.email
+                            usuarios["nickglobal"] = usuario.nickglobal.toString()
+                            usuarios["password"] = usuario.password
+                            usuarios["foto"] = usuario.foto.toString()
+                            usuarios["informacion"] = usuario.informacion.toString()
+                            usuarios["telefono"] = usuario.telefono.toString()
                             var id: String = auth.currentUser.getUid()
                             database.child("users").child(id).setValue(usuarios).addOnCompleteListener(it) { task2 ->
                                 if (task2.isSuccessful) {
