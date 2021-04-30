@@ -1,10 +1,20 @@
+<<<<<<< HEAD
 #Fri Apr 30 18:57:55 CEST 2021
+=======
+#Sun Apr 25 04:32:44 CEST 2021
+>>>>>>> feature/ConversacionOneToOne
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
+<<<<<<< HEAD
 base.2=D\:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 base.1=D\:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
 base.0=D\:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+base.2=C\:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+>>>>>>> feature/ConversacionOneToOne

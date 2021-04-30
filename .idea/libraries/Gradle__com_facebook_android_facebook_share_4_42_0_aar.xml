@@ -4,9 +4,15 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac2ba32ebefda3b0dff4a0147558bb7b/jetified-facebook-share-4.42.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac2ba32ebefda3b0dff4a0147558bb7b/jetified-facebook-share-4.42.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac2ba32ebefda3b0dff4a0147558bb7b/jetified-facebook-share-4.42.0/AndroidManifest.xml" />
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04092276320cf32299caf7062b90391c/jetified-facebook-share-4.42.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04092276320cf32299caf7062b90391c/jetified-facebook-share-4.42.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04092276320cf32299caf7062b90391c/jetified-facebook-share-4.42.0/AndroidManifest.xml" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53b3333ae59dd595cec7418158f882ce/jetified-facebook-share-4.42.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53b3333ae59dd595cec7418158f882ce/jetified-facebook-share-4.42.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53b3333ae59dd595cec7418158f882ce/jetified-facebook-share-4.42.0/res" />
+>>>>>>> feature/ConversacionOneToOne
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-share/4.42.0/3e09e423eaa79903ec9d4d02df95ce3be786ecdf/facebook-share-4.42.0-javadoc.jar!/" />

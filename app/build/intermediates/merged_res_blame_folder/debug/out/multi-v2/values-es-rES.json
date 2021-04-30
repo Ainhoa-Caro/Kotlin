@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rES\\values-es-rES.xml",
             "map": [
                 {
                     "source": "C:\\Users\\sdelp\\.gradle\\caches\\transforms-2\\files-2.1\\f12f803b20fd711c7ac30686e6d6d6f1\\jetified-facebook-login-4.42.0\\res\\values-es-rES\\values-es-rES.xml",
+=======
+            "outputFile": "C:\\Users\\mhl_1\\AndroidStudioProjects\\REPO_CHITCHAT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rES\\values-es-rES.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\mhl_1\\.gradle\\caches\\transforms-2\\files-2.1\\9e6826bc02928168e6fbe4992486ae58\\jetified-facebook-login-4.42.0\\res\\values-es-rES\\values-es-rES.xml",
+>>>>>>> feature/ConversacionOneToOne
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1814,6 +1814,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable extmensaje_textview
 drawable facebook
 drawable gardient_background
 drawable googleg_disabled_color_18
@@ -1862,6 +1863,7 @@ drawable messenger_button_blue_bg_selector
 drawable messenger_button_send_round_shadow
 drawable messenger_button_white_bg_round
 drawable messenger_button_white_bg_selector
+drawable mimensaje_textview
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1966,8 +1968,12 @@ id action_divider
 id action_image
 id action_loginFragment_to_mainFragment
 id action_loginFragment_to_registroFragment
+<<<<<<< HEAD
 id action_mainFragment_to_loginFragment
 id action_mainFragment_to_seleccionContactoFragment
+=======
+id action_mainFragment_to_chatOneToOneFragment
+>>>>>>> feature/ConversacionOneToOne
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -2009,6 +2015,8 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnNewConvOneToOne
+id btnOldConvOneToOne
 id button
 id buttonPanel
 id cache_measures
@@ -2022,6 +2030,8 @@ id center_vertical
 id cerrarSesion
 id chain
 id chains
+id chatNameText
+id chatOneToOneFragment
 id checkbox
 id checked
 id chip
@@ -2093,7 +2103,12 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+<<<<<<< HEAD
 id editTextBusquedaContacto
+=======
+id editTextIdChatOld
+id editTextMailOtroUser
+>>>>>>> feature/ConversacionOneToOne
 id edit_query
 id elastic
 id end
@@ -2101,13 +2116,19 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id enviarMsjButton
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+<<<<<<< HEAD
 id fab_nuevaAccion
 id fab_nuevasala
 id fab_nuevochat
 id fab_nuevogrupo
+=======
+id extMensajeLayout
+id extMensajeTextView
+>>>>>>> feature/ConversacionOneToOne
 id fade
 id fill
 id fill_horizontal
@@ -2120,6 +2141,7 @@ id floating
 id forever
 id fragment
 id fragment_container_view_tag
+id frameLayout
 id general
 id ghost_view
 id ghost_view_holder
@@ -2159,6 +2181,8 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id labIdChatOld
+id labMailOtroUser
 id labelGroup
 id labeled
 id large
@@ -2198,6 +2222,8 @@ id material_value_index
 id media_actions
 id message
 id messenger_send_button
+id miMensajeLayout
+id miMensajeTextView
 id middle
 id mini
 id mobile_navigation
@@ -2208,6 +2234,8 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id msjRecylerView
+id msjTextField
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -2404,6 +2432,7 @@ id unknown
 id unlabeled
 id up
 id useLogo
+id usersTextView
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -2505,12 +2534,18 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout drawer_right_header
 layout dynamic_feature_install_fragment
+layout fragment_chat_one_to_one
 layout fragment_login
 layout fragment_main
 layout fragment_registro
+<<<<<<< HEAD
 layout fragment_seleccion_contacto
 layout item_list_contactos
 layout item_list_conversaciones
+=======
+layout item_conversacion
+layout item_mensaje
+>>>>>>> feature/ConversacionOneToOne
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

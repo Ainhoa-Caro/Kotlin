@@ -8,13 +8,30 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="chatOneToOneFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="342" />
+                            <option name="y" value="121" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="loginFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="-283" />
                             <option name="y" value="19" />
+=======
+                            <option name="x" value="-502" />
+                            <option name="y" value="320" />
+>>>>>>> feature/ConversacionOneToOne
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -39,18 +56,27 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="106" />
                             <option name="y" value="-135" />
+=======
+                            <option name="x" value="-41" />
+                            <option name="y" value="120" />
+>>>>>>> feature/ConversacionOneToOne
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+<<<<<<< HEAD
                             <entry key="action_mainFragment_to_loginFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
                             <entry key="action_mainFragment_to_seleccionContactoFragment">
+=======
+                            <entry key="action_mainFragment_to_chatOneToOneFragment">
+>>>>>>> feature/ConversacionOneToOne
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -65,6 +91,7 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="90" />
                             <option name="y" value="400" />
                           </Point>
@@ -79,6 +106,10 @@
                           <Point>
                             <option name="x" value="617" />
                             <option name="y" value="-113" />
+=======
+                            <option name="x" value="-55" />
+                            <option name="y" value="459" />
+>>>>>>> feature/ConversacionOneToOne
                           </Point>
                         </option>
                       </LayoutPositions>
