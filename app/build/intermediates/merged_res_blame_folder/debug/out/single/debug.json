@@ -24,12 +24,12 @@
         "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\menu_drawer_right_itemlist.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\menu\\drawer_right_itemlist.xml"
-    },
-    {
         "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_more_vert_black_24dp.xml.flat",
         "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\drawable\\ic_more_vert_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\menu_drawer_right_itemlist.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\menu\\drawer_right_itemlist.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\anim_rotate_open_animation.xml.flat",
@@ -56,16 +56,16 @@
         "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\drawable\\gardient_background.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_contactos.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\layout\\item_list_contactos.xml"
+        "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_seleccion_contacto.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\layout\\fragment_seleccion_contacto.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_chat_black_24dp.xml.flat",
         "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\drawable\\ic_chat_black_24dp.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_seleccion_contacto.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\layout\\fragment_seleccion_contacto.xml"
+        "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_contactos.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\layout\\item_list_contactos.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_account_circle_black_24dp.xml.flat",
