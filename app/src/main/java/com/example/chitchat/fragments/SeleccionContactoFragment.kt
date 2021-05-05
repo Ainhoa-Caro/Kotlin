@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -34,6 +35,9 @@ class SeleccionContactoFragment : Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_seleccion_contacto, container, false)
 
+        val returnButton = root.findViewById<View>(R.id.imageButtonReturnSeleccionContactos)
+        returnButton.setOnClickListener { NavHostFragment.findNavController(this).popBackStack() }
+
         getListaContactosFromDB(root)
 
         return root
@@ -44,11 +48,9 @@ class SeleccionContactoFragment : Fragment() {
     private fun initRecyclerView(view: View, userList: MutableList<UserFromFirebase>) {
         //Create recyclerView
         recyclerViewContactos = view.findViewById(R.id.recyclerViewListaContactos)
-        recyclerViewContactos.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-
-
         val adapter = ContactosAdapter(userList, requireContext())
         recyclerViewContactos.adapter = adapter
+        recyclerViewContactos.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
     }
 
 
