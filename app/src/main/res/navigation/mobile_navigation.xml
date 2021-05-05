@@ -32,6 +32,9 @@
         <action
             android:id="@+id/action_mainFragment_to_seleccionContactoFragment"
             app:destination="@id/seleccionContactoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_conversacionOneToOne"
+            app:destination="@id/conversacionOneToOne" />
 
     </fragment>
     <fragment
@@ -43,5 +46,14 @@
         android:id="@+id/seleccionContactoFragment"
         android:name="com.example.chitchat.fragments.SeleccionContactoFragment"
         android:label="fragment_seleccion_contacto"
-        tools:layout="@layout/fragment_seleccion_contacto" />
+        tools:layout="@layout/fragment_seleccion_contacto" >
+        <action
+            android:id="@+id/action_seleccionContactoFragment_to_conversacionOneToOne"
+            app:destination="@id/conversacionOneToOne" />
+    </fragment>
+    <fragment
+        android:id="@+id/conversacionOneToOne"
+        android:name="com.example.chitchat.fragments.ConversacionOneToOne"
+        android:label="fragment_conversacion_one_to_one"
+        tools:layout="@layout/fragment_conversacion_one_to_one" />
 </navigation>

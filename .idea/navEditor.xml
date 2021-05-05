@@ -8,6 +8,18 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="conversacionOneToOne">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="353" />
+                            <option name="y" value="-414" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="loginFragment">
                     <value>
                       <LayoutPositions>
@@ -39,12 +51,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="106" />
-                            <option name="y" value="-135" />
+                            <option name="x" value="-38" />
+                            <option name="y" value="-123" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_mainFragment_to_conversacionOneToOne">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_mainFragment_to_loginFragment">
                               <value>
                                 <LayoutPositions />
@@ -65,8 +82,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="90" />
-                            <option name="y" value="400" />
+                            <option name="x" value="-200" />
+                            <option name="y" value="313" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -77,9 +94,18 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="617" />
-                            <option name="y" value="-113" />
+                            <option name="x" value="198" />
+                            <option name="y" value="62" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_seleccionContactoFragment_to_conversacionOneToOne">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

@@ -1853,6 +1853,8 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable mensaje_emisor_textview
+drawable mensaje_receptor_textview
 drawable messenger_bubble_large_blue
 drawable messenger_bubble_large_white
 drawable messenger_bubble_small_blue
@@ -1966,6 +1968,7 @@ id action_divider
 id action_image
 id action_loginFragment_to_mainFragment
 id action_loginFragment_to_registroFragment
+id action_mainFragment_to_conversacionOneToOne
 id action_mainFragment_to_loginFragment
 id action_mainFragment_to_seleccionContactoFragment
 id action_menu_divider
@@ -1973,6 +1976,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_seleccionContactoFragment_to_conversacionOneToOne
 id action_text
 id actions
 id activity_chooser_view_content
@@ -2052,6 +2056,7 @@ id container
 id content
 id contentPanel
 id contiguous
+id conversacionOneToOne
 id coordinator
 id cos
 id counterclockwise
@@ -2101,9 +2106,12 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id enviarMsjButton
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id extMensajeLayout
+id extMensajeTextView
 id fab_nuevaAccion
 id fab_nuevasala
 id fab_nuevochat
@@ -2198,6 +2206,8 @@ id material_value_index
 id media_actions
 id message
 id messenger_send_button
+id miMensajeLayout
+id miMensajeTextView
 id middle
 id mini
 id mobile_navigation
@@ -2208,6 +2218,8 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id msjRecylerView
+id msjTextField
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -2505,12 +2517,14 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout drawer_right_header
 layout dynamic_feature_install_fragment
+layout fragment_conversacion_one_to_one
 layout fragment_login
 layout fragment_main
 layout fragment_registro
 layout fragment_seleccion_contacto
 layout item_list_contactos
 layout item_list_conversaciones
+layout item_list_mensajes
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

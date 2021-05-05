@@ -36,12 +36,12 @@
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\layout\\item_list_contactos.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
@@ -52,12 +52,12 @@
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\drawable\\ic_chat_black_24dp.xml"
     },
     {
-        "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_more_vert_black_24dp.xml.flat",
-        "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\drawable\\ic_more_vert_black_24dp.xml"
-    },
-    {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\anim_to_bottom_animation.xml.flat",
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\anim\\to_bottom_animation.xml"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_more_vert_black_24dp.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\drawable\\ic_more_vert_black_24dp.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_insertarfoto.png.flat",
@@ -88,6 +88,10 @@
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
     },
     {
+        "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_conversacion_one_to_one.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\layout\\fragment_conversacion_one_to_one.xml"
+    },
+    {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
     },
@@ -102,6 +106,10 @@
     {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_mensajes.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\layout\\item_list_mensajes.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botoneslogin.xml.flat",
@@ -126,6 +134,10 @@
     {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mensaje_receptor_textview.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\drawable\\mensaje_receptor_textview.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_black_24dp.xml.flat",
@@ -198,6 +210,10 @@
     {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logogoogle.png.flat",
         "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\drawable-v24\\logogoogle.png"
+    },
+    {
+        "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mensaje_emisor_textview.xml.flat",
+        "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\drawable\\mensaje_emisor_textview.xml"
     },
     {
         "merged": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\res\\merged\\debug\\layout_drawer_right_header.xml.flat",

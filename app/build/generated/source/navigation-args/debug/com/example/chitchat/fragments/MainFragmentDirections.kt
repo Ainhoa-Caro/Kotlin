@@ -11,5 +11,8 @@ public class MainFragmentDirections private constructor() {
 
     public fun actionMainFragmentToSeleccionContactoFragment(): NavDirections =
         ActionOnlyNavDirections(R.id.action_mainFragment_to_seleccionContactoFragment)
+
+    public fun actionMainFragmentToConversacionOneToOne(): NavDirections =
+        ActionOnlyNavDirections(R.id.action_mainFragment_to_conversacionOneToOne)
   }
 }
