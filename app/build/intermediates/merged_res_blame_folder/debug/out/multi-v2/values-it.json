@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-it\\values-it.xml",
+            "outputFile": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-it\\values-it.xml",
             "map": [
                 {
                     "source": "C:\\Users\\sdelp\\.gradle\\caches\\transforms-2\\files-2.1\\000a7481a6ebe50e16723bf6155fa7bd\\jetified-play-services-base-17.1.0\\res\\values-it\\values.xml",

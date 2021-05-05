@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "2,14,9,16,18,23",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,536,380,630,714,888",
-                        "endLines": "7,14,12,16,20,26",
-                        "endColumns": "12,90,12,80,12,12",
-                        "endOffsets": "372,622,528,706,843,1036"
-                    },
-                    "to": {
-                        "startLines": "1290,1296,1297,1301,3609,5103",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "86099,86416,86506,86656,237424,338112",
-                        "endLines": "1295,1296,1300,1301,3611,5106",
-                        "endColumns": "12,89,12,79,12,12",
-                        "endOffsets": "86411,86501,86651,86731,237551,338257"
-                    }
-                },
                 {
                     "source": "C:\\Users\\sdelp\\.gradle\\caches\\transforms-2\\files-2.1\\f6b4da6126578868135c8abb4bc3c850\\media-1.0.0\\res\\values\\values.xml",
                     "from": {
@@ -37,6 +18,23 @@
                         "startOffsets": "27513,56119,56172,56225,56278,247030,247206,247328,247590,247785",
                         "endColumns": "88,52,52,52,52,65,121,60,65,66",
                         "endOffsets": "27597,56167,56220,56273,56326,247091,247323,247384,247651,247847"
+                    }
+                },
+                {
+                    "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
+                    },
+                    "to": {
+                        "startLines": "421,422,423",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "20781,20827,20874",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "20822,20869,20920"
                     }
                 },
                 {
@@ -76,6 +74,23 @@
                     }
                 },
                 {
+                    "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3,6,5,4",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "90,149,316,265,206",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "143,200,353,310,259"
+                    },
+                    "to": {
+                        "startLines": "621,622,704,930,931",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "34504,34562,40009,55033,55083",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "34557,34613,40046,55078,55136"
+                    }
+                },
+                {
                     "source": "C:\\Users\\sdelp\\.gradle\\caches\\transforms-2\\files-2.1\\438d8080950103a8b710c7b1e3a22ea0\\lifecycle-runtime-2.3.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -112,40 +127,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "157,57,105",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "198,99,151"
-                    },
-                    "to": {
-                        "startLines": "421,422,423",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "20781,20827,20874",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "20822,20869,20920"
-                    }
-                },
-                {
-                    "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\values\\dimens.xml",
-                    "from": {
-                        "startLines": "2,3,6,5,4",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "90,149,316,265,206",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "143,200,353,310,259"
-                    },
-                    "to": {
-                        "startLines": "621,622,704,930,931",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "34504,34562,40009,55033,55083",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "34557,34613,40046,55078,55136"
-                    }
-                },
-                {
                     "source": "C:\\Users\\sdelp\\.gradle\\caches\\transforms-2\\files-2.1\\afede49700bd1694a68b9b009c659c9e\\jetified-glide-4.11.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -160,6 +141,42 @@
                         "startOffsets": "59723",
                         "endColumns": "57",
                         "endOffsets": "59776"
+                    }
+                },
+                {
+                    "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,712",
+                        "endColumns": "143,81,103,108,119,97,74",
+                        "endOffsets": "194,276,380,489,609,707,782"
+                    },
+                    "to": {
+                        "startLines": "1181,1188,1190,1191,1192,1193,1270",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "72437,73180,73304,73408,73517,73637,84722",
+                        "endColumns": "143,81,103,108,119,97,74",
+                        "endOffsets": "72576,73257,73403,73512,73632,73730,84792"
+                    }
+                },
+                {
+                    "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "2,14,9,16,18,23",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,536,380,630,714,888",
+                        "endLines": "7,14,12,16,20,26",
+                        "endColumns": "12,90,12,80,12,12",
+                        "endOffsets": "372,622,528,706,843,1036"
+                    },
+                    "to": {
+                        "startLines": "1290,1296,1297,1301,3609,5103",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "86099,86416,86506,86656,237424,338112",
+                        "endLines": "1295,1296,1300,1301,3611,5106",
+                        "endColumns": "12,89,12,79,12,12",
+                        "endOffsets": "86411,86501,86651,86731,237551,338257"
                     }
                 },
                 {
@@ -255,6 +272,23 @@
                         "endLines": "443,444,445,446,447,448,449,450,1163,1164,1165,1166,1167,1168,1169,1170,1172,1173,1174,1175,1176,1177,1178,1179,1180,7037,7726",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "22454,22534,22624,22714,22794,22875,22955,23035,70204,70385,70510,70617,70797,70920,71036,71139,71494,71599,71780,71905,72080,72228,72291,72353,72432,460919,496568"
+                    }
+                },
+                {
+                    "source": "D:\\Users\\Sergi\\Documents\\Chitchat\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "23,22,24,26,25,28,27,7,1,14,15,30,32,10,9,11,6,5,4,3,2,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "934,891,985,1079,1026,1202,1149,416,17,624,685,1268,1370,516,472,566,353,277,216,139,64,808",
+                        "endColumns": "49,41,39,68,51,62,51,52,45,59,70,41,69,48,42,52,61,74,59,75,73,79",
+                        "endOffsets": "979,928,1020,1143,1073,1260,1196,464,58,679,751,1305,1435,560,510,614,410,347,271,210,133,883"
+                    },
+                    "to": {
+                        "startLines": "1096,1097,1098,1099,1100,1101,1102,1130,1131,1186,1187,1189,1194,1216,1217,1218,1257,1258,1259,1260,1261,1268",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "64690,64740,64782,64822,64891,64943,65006,66924,66977,73049,73109,73262,73735,76563,76612,76655,83410,83472,83547,83607,83683,84595",
+                        "endColumns": "49,41,39,68,51,62,51,52,45,59,70,41,69,48,42,52,61,74,59,75,73,79",
+                        "endOffsets": "64735,64777,64817,64886,64938,65001,65053,66972,67018,73104,73175,73299,73800,76607,76650,76703,83467,83542,83602,83678,83752,84670"
                     }
                 },
                 {
@@ -461,23 +495,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,712",
-                        "endColumns": "143,81,103,108,119,97,74",
-                        "endOffsets": "194,276,380,489,609,707,782"
-                    },
-                    "to": {
-                        "startLines": "1181,1188,1190,1191,1192,1193,1270",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "72437,73180,73304,73408,73517,73637,84722",
-                        "endColumns": "143,81,103,108,119,97,74",
-                        "endOffsets": "72576,73257,73403,73512,73632,73730,84792"
-                    }
-                },
-                {
                     "source": "C:\\Users\\sdelp\\.gradle\\caches\\transforms-2\\files-2.1\\4855963b782bd9a465eca6a6ed3b09bc\\jetified-savedstate-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -528,23 +545,6 @@
                         "startOffsets": "63250,83247,83323",
                         "endColumns": "52,75,86",
                         "endOffsets": "63298,83318,83405"
-                    }
-                },
-                {
-                    "source": "D:\\Users\\Sergi\\Documents\\chitchat_tfc\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "23,22,24,26,25,28,27,7,1,14,15,30,32,10,9,11,6,5,4,3,2,20",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "934,891,985,1079,1026,1202,1149,416,17,624,685,1268,1370,516,472,566,353,277,216,139,64,808",
-                        "endColumns": "49,41,39,68,51,62,51,52,45,59,70,41,69,48,42,52,61,74,59,75,73,79",
-                        "endOffsets": "979,928,1020,1143,1073,1260,1196,464,58,679,751,1305,1435,560,510,614,410,347,271,210,133,883"
-                    },
-                    "to": {
-                        "startLines": "1096,1097,1098,1099,1100,1101,1102,1130,1131,1186,1187,1189,1194,1216,1217,1218,1257,1258,1259,1260,1261,1268",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "64690,64740,64782,64822,64891,64943,65006,66924,66977,73049,73109,73262,73735,76563,76612,76655,83410,83472,83547,83607,83683,84595",
-                        "endColumns": "49,41,39,68,51,62,51,52,45,59,70,41,69,48,42,52,61,74,59,75,73,79",
-                        "endOffsets": "64735,64777,64817,64886,64938,65001,65053,66972,67018,73104,73175,73299,73800,76607,76650,76703,83467,83542,83602,83678,83752,84670"
                     }
                 },
                 {
