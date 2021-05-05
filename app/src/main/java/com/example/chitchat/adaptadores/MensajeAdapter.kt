@@ -1,5 +1,12 @@
 package com.example.chitchat.adaptadores
 
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.example.chitchat.R
+import com.example.chitchat.pojos.Mensaje
+
 class MensajeAdapter(private val user: String): RecyclerView.Adapter<MensajeAdapter.MessageViewHolder>() {
 
     private var mensajes: List<Mensaje> = emptyList()
