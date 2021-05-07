@@ -1,6 +1,7 @@
 package com.example.chitchat.fragments
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
@@ -12,9 +13,18 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.chitchat.R
+import com.example.chitchat.adaptadores.ContactosAdapter
+import com.example.chitchat.adaptadores.ConversationsAdapter
+import com.example.chitchat.pojos.Conversacion
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.fragment_main.*
 
 
@@ -42,13 +52,13 @@ class MainFragment : Fragment() {
     //Variable clicked determina si el fab de nuevo chat esta clickado o no
     private var clicked = false
 
+    lateinit var recyclerViewConversaciones: RecyclerView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //Tell the fragment it has an option menu
             setHasOptionsMenu(true)
-
-
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -129,10 +139,12 @@ class MainFragment : Fragment() {
             drawerLayout.openDrawer(root.findViewById<View>(R.id.drawer_der))
         }
 
+        getListaConversacionesFromDB(root)
 
         // Inflate the layout for this fragment
         return root
     }
+    //Accion de clickar el button de nueva conversacion
     fun onNewButtonClicked(){
         setVisibility(clicked)
         setAnimation(clicked)
@@ -141,6 +153,7 @@ class MainFragment : Fragment() {
         clicked = !clicked
     }
 
+    //Establecer animaciones a los float buttons
     private fun setAnimation(clicked: Boolean) {
         if(!clicked){
             fab_nuevaAccion.startAnimation(rotateOpen)
@@ -155,6 +168,7 @@ class MainFragment : Fragment() {
         }
     }
 
+    //Cambiar el estado de visibilidad de los float action button
     private fun setVisibility(clicked: Boolean) {
         if(!clicked){
             fab_nuevasala.visibility = View.VISIBLE
@@ -167,6 +181,49 @@ class MainFragment : Fragment() {
         }
     }
 
+    //Get data from users in database and create the recyclerView
+    private fun getListaConversacionesFromDB(view: View) {
+
+        //Obtenemos referencia de los mensajes del chat existente
+        //en Firebase (a través de su id) y los ordenamos por fecha.
+        val refContactosFireBase = FirebaseDatabase.getInstance()
+                .getReference("/chatsOneToOne")
+                //.orderByChild("")
+
+        refContactosFireBase.addValueEventListener(object : ValueEventListener {
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+                var conversationsList: MutableList<Conversacion> = mutableListOf()
+                snapshot.children.forEach {
+                    var conversacion = it.getValue(Conversacion::class.java)!!
+
+                    if (conversacion != null) {
+                        conversationsList?.add(conversacion)
+                    }
+                }
+                if (conversationsList != null) {
+                    initRecyclerView(view, conversationsList)
+                } else {
+                    Toast.makeText(context,"No users found in database", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.d(":::mensaj", "Error ennnnn onCancelled !!!!!!!!!!!!")
+            }
+        })
+    }
+
+    //Create recyclerview with contact list
+    private fun initRecyclerView(view: View, conversationList: MutableList<Conversacion>) {
+        //Create recyclerView
+        recyclerViewConversaciones = view.findViewById(R.id.mainRecyclerView)
+        recyclerViewConversaciones.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+
+
+        val adapter = ConversationsAdapter(conversationList, requireContext())
+        recyclerViewConversaciones.adapter = adapter
+    }
 }
 
 /*
@@ -179,13 +236,6 @@ class MainFragment : Fragment() {
     //Variable de enlace con base de datos
     private val auth: FirebaseAuth = Firebase.auth
     private val database: DatabaseReference = Firebase.database.reference
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-        }
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
@@ -259,9 +309,9 @@ class MainFragment : Fragment() {
 
     private fun crearHashMapChat(conversacion: Conversacion): HashMap<String, String?> {
         var chat = HashMap<String, String?>()
-        chat["Nombre chat"] = conversacion.name
-        chat["Id Usuario Logueado"] = conversacion.userLoginId
-        chat["Id otro usuario"] = conversacion.otherUserId
+        chat["name"] = conversacion.name
+        chat["userLoginId"] = conversacion.userLoginId
+        chat["otherUserId"] = conversacion.otherUserId
         return chat
     }
 

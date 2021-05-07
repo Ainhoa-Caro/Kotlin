@@ -33,11 +33,6 @@ class ConversacionOneToOne : Fragment() {
     private val auth: FirebaseAuth = Firebase.auth
     private val database : DatabaseReference = Firebase.database.reference
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-        }
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -46,7 +41,7 @@ class ConversacionOneToOne : Fragment() {
         //Toast de comprobación paso de parámetro:
         Toast.makeText(context, chatId, Toast.LENGTH_LONG).show()
 
-        userLogueadoId = auth.currentUser.getUid()
+        userLogueadoId = auth.currentUser.uid
 
         //Enlazamos Fragment con su Layout
         val root = inflater.inflate(R.layout.fragment_conversacion_one_to_one, container, false)
