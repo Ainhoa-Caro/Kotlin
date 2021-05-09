@@ -10,18 +10,6 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/labMailOtroUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mail con quien quieras hablar"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
-
-    <TextView
         android:id="@+id/labIdChatOld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,28 +22,16 @@
         app:layout_constraintVertical_bias="0.526" />
 
     <Button
-        android:id="@+id/btnNewConvOneToOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nueva Conversacion Uno a Uno"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
-
-    <Button
         android:id="@+id/btnOldConvOneToOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Antigua Conversacion Uno a Uno"
+        android:text="Conversacion Existente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
+        app:layout_constraintVertical_bias="0.713" />
 
     <EditText
         android:id="@+id/editTextMailOtroUser"
@@ -65,19 +41,44 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199" />
+        app:layout_constraintVertical_bias="0.132" />
+
+    <Button
+        android:id="@+id/btnNewConvOneToOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Conversacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/labMailOtroUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mail con quien quieras hablar"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
 
     <EditText
         android:id="@+id/editTextIdChatOld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.594" />

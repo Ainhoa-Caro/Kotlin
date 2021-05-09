@@ -117,14 +117,14 @@ class MainFragment : Fragment() {
     private fun guardarChatyNavegar(root: View, conversacion: Conversacion, chat: HashMap<String, String?>) {
         activity?.let {
             //Agregamos nuevo chat a la BD, además...
-            //FALTA: //Cada user debería tener un campo que incluyera todos los chats en los que está participando.
+            //FALTA:
+            // Cada user debería tener un campo que incluyera todos los chats en los que está participando.
             database.child("chatsOneToOne").child(conversacion.id).setValue(chat).addOnCompleteListener(it) { task1 ->
                 if (task1.isSuccessful) {
                     // Si todo está OK nos lleva al Fragment de Conversación One To One.
                         // Al que le pasamos por parámetro el id de la nueva conversacion/chat (ver mobile_navigation.xml)
-                    val action = MainFragmentDirections.actionMainFragmentToChatOneToOneFragment(conversacion.id)
+                    val action = MainFragmentDirections.actionMainFragmentToChatOneToOneFragment(idChat = conversacion.id)
                     Navigation.findNavController(root).navigate(action)
-                           // NavHostFragment.findNavController(this).navigate(R.id.action_mainFragment_to_chatOneToOneFragment)
                 } else {
                     //Aquí pondríamos un mensaje de error
                 }
@@ -143,7 +143,6 @@ class MainFragment : Fragment() {
             // Al que le pasamos por parámetro el id de la antigua conversacion/chat (EditText).
             val action = MainFragmentDirections.actionMainFragmentToChatOneToOneFragment(idChatOld.text.toString())
             Navigation.findNavController(root).navigate(action)
-            //NavHostFragment.findNavController(this).navigate(R.id.action_mainFragment_to_chatOneToOneFragment)
         }
     }
 
