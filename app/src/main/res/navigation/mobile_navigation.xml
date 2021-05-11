@@ -55,5 +55,9 @@
         android:id="@+id/conversacionOneToOne"
         android:name="com.example.chitchat.fragments.ConversacionOneToOne"
         android:label="fragment_conversacion_one_to_one"
-        tools:layout="@layout/fragment_conversacion_one_to_one" />
+        tools:layout="@layout/fragment_conversacion_one_to_one" >
+        <argument
+            android:name="idConversacion"
+            app:argType="string" />
+    </fragment>
 </navigation>

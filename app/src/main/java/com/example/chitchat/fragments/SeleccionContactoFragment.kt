@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,10 +18,10 @@ import com.example.chitchat.adaptadores.ContactosAdapter
 import com.example.chitchat.pojos.User
 import com.example.chitchat.pojos.UserFromFirebase
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.*
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import java.io.File
 
 
@@ -36,9 +37,14 @@ class SeleccionContactoFragment : Fragment() {
 
         getListaContactosFromDB(root)
 
+        val btnReturn = root.findViewById<View>(R.id.imageButtonReturnSeleccionContactos)
+        btnReturn.setOnClickListener { NavHostFragment.findNavController(this).popBackStack() }
         return root
     }
 
+    //Variable de enlace con base de datos
+    private val auth: FirebaseAuth = Firebase.auth
+    private val database: DatabaseReference = Firebase.database.reference
 
     //Create recyclerview with contact list
     private fun initRecyclerView(view: View, userList: MutableList<UserFromFirebase>) {
@@ -47,7 +53,7 @@ class SeleccionContactoFragment : Fragment() {
         recyclerViewContactos.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
 
 
-        val adapter = ContactosAdapter(userList, requireContext())
+        val adapter = ContactosAdapter(userList, requireContext(), requireActivity(), database, auth!!)
         recyclerViewContactos.adapter = adapter
     }
 
