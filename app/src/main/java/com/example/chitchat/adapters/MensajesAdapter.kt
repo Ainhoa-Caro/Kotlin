@@ -6,6 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chitchat.R
 import com.example.chitchat.pojos.Mensaje
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.item_mensaje.view.*
 
 //El adaptador se encargará de crear y asociar datos a cada ViewHolder(mensaje) dentro del RecyclerView.

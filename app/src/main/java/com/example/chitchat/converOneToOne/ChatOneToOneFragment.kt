@@ -171,6 +171,14 @@ class ChatOneToOneFragment : Fragment() {
 
         //Limpiamos texto del TextView.
         msjTextField.setText("")
+
+        /*PRUEBA VER NICK DE EMISOR*/
+
+        // Buscamos "NickGlobal" de usuario que escribe:
+        // Buscando nodo padre:"users" mediante su Id(userLogueadoId).
+        // Buscando nodo hijo:"Nick Global".
+       // var nickUserLog: String = FirebaseDatabase.getInstance().getReference("/chatsOneToOne/$userLogueadoId/Nick Global").getString()
+        //Toast.makeText(context, nickUserLog, Toast.LENGTH_LONG).show()
     }
 
 }//FIN Fragment ChatOneToOneFragment.
